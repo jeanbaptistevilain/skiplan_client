@@ -1,7 +1,4 @@
 class WeatherObject
-  include ActiveModel::Validations
-
-  validates_presence_of :url, :type_of_media
 
   attr_accessor :nom_station,
                 :langue,
