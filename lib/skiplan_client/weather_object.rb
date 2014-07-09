@@ -1,6 +1,6 @@
 class WeatherObject
 
-  attr_accessor :nom_station,
+  attr_accessor :name,
                 :langue,
                 :date_heur_maj,
                 :zone_nom,
@@ -38,7 +38,7 @@ class WeatherObject
                 :dem_ciel_id_apm
 
   def initialize(attributes = {})
-                  @nom = attributes[:nom_station]
+                  @nom = attributes[:name]
                   @langue = attributes[:langue]
                   @dateheur = attributes[:date_heur_maj]
                   @zonenom = attributes[:zone_nom]

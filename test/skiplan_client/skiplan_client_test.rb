@@ -4,6 +4,7 @@ gem 'shoulda'
 require 'test/unit'
 require 'shoulda'
 require 'skiplan_client'
+require 'skiplan_client/weather_object'
 
 class SkiplanClientTest < Test::Unit::TestCase
 
@@ -16,5 +17,12 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal 'Tokyo', city
     assert_equal 'JP', country
 
+  end
+
+  should 'test get_weather founction' do
+
+    test = SkiplanClient.get_weather
+
+    assert_equal '101' , test.auj_ciel_id_matin
   end
 end

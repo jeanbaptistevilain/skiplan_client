@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SKIPLAN version="1">
+  <DATEINFO>03/07/2014 17:01</DATEINFO>
+  <DATEINFO_EN>07/03/2014 05:01 PM</DATEINFO_EN>
+  <STATION nom="LE GRAND-BORNAND" lang="fr">
+    <PERIODES>
+      <PERIODE prd_id="1" nom="Hiver1" debut="01/12/2000" debut_en="12/01/2000" fin="14/02/2000" fin_en="02/14/2000"/>
+      <PERIODE prd_id="2" nom="Hiver2" debut="15/02/2000" debut_en="02/15/2000" fin="14/03/2000" fin_en="03/14/2000"/>
+      <PERIODE prd_id="3" nom="Hiver3" debut="15/03/2000" debut_en="03/15/2000" fin="27/04/2000" fin_en="04/27/2000"/>
+      <PERIODE prd_id="4" nom="Intersaison" debut="28/04/2000" debut_en="04/28/2000" fin="30/11/2000" fin_en="11/30/2000"/>
+    </PERIODES>
+    <METEO>
+      <PARAMETRES>
+        <ZONE nom="CHINAILLON" altitude="1300" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="CHINAILLON">
+          <VALRISQUE>0</VALRISQUE>
+          <LIBRISQUE/>
+          <RSQ_REEL>0</RSQ_REEL>
+          <TEMPERATURE>+12</TEMPERATURE>
+          <TEMPERATURE_APM>+20</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+4</TEMPERATURE_RESSENTIE>
+          <NEIGE/>
+          <CUMUL/>
+          <HORS_PISTE>0</HORS_PISTE>
+          <VENT>4</VENT>
+          <DIRECTION>SE</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <HORS_PISTE_QLT_ID>100</HORS_PISTE_QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>101</CIEL_ID>
+          <CIEL_ID_APM>101</CIEL_ID_APM>
+          <DERNIERE_CHUTE>27/03/2014 08:00</DERNIERE_CHUTE>
+          <DERNIERE_CHUTE_EN>03/27/2014 08:00 AM</DERNIERE_CHUTE_EN>
+          <LIMITE_ISOTHERME_0>4200</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE>3200</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>3</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+        <ZONE nom="MONT-LACHAT" altitude="2100" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="MONT-LACHAT">
+          <VALRISQUE>0</VALRISQUE>
+          <LIBRISQUE/>
+          <RSQ_REEL>0</RSQ_REEL>
+          <TEMPERATURE>+10</TEMPERATURE>
+          <TEMPERATURE_APM>+14</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+4</TEMPERATURE_RESSENTIE>
+          <NEIGE/>
+          <CUMUL/>
+          <HORS_PISTE>0</HORS_PISTE>
+          <VENT>4</VENT>
+          <DIRECTION>S</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <HORS_PISTE_QLT_ID>100</HORS_PISTE_QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>101</CIEL_ID>
+          <CIEL_ID_APM>101</CIEL_ID_APM>
+          <DERNIERE_CHUTE>08/04/2014 08:00</DERNIERE_CHUTE>
+          <DERNIERE_CHUTE_EN>04/08/2014 08:00 AM</DERNIERE_CHUTE_EN>
+          <LIMITE_ISOTHERME_0>4200</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE>3200</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>3</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+        <ZONE nom="VILLAGE" altitude="1000" datemaj="22/04/2014 08:31:28" datemaj_en="04/22/2014 08:31:28 AM" reference="VILLAGE">
+          <VALRISQUE>0</VALRISQUE>
+          <LIBRISQUE/>
+          <RSQ_REEL>0</RSQ_REEL>
+          <TEMPERATURE/>
+          <TEMPERATURE_APM/>
+          <TEMPERATURE_RESSENTIE/>
+          <NEIGE>0</NEIGE>
+          <CUMUL>0</CUMUL>
+          <HORS_PISTE>0</HORS_PISTE>
+          <VENT>0</VENT>
+          <DIRECTION/>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <HORS_PISTE_QLT_ID>100</HORS_PISTE_QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>100</CIEL_ID>
+          <CIEL_ID_APM>100</CIEL_ID_APM>
+          <DERNIERE_CHUTE>24/03/2014 08:00</DERNIERE_CHUTE>
+          <DERNIERE_CHUTE_EN>03/24/2014 08:00 AM</DERNIERE_CHUTE_EN>
+          <LIMITE_ISOTHERME_0/>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE/>
+          <INDICE_UV/>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+        <ZONE nom="LES PLANS" altitude="1150" datemaj="22/04/2014 08:29:45" datemaj_en="04/22/2014 08:29:45 AM" reference="LES PLANS">
+          <VALRISQUE>0</VALRISQUE>
+          <LIBRISQUE/>
+          <RSQ_REEL>0</RSQ_REEL>
+          <TEMPERATURE/>
+          <TEMPERATURE_APM/>
+          <TEMPERATURE_RESSENTIE/>
+          <NEIGE>0</NEIGE>
+          <CUMUL>0</CUMUL>
+          <HORS_PISTE>0</HORS_PISTE>
+          <VENT>0</VENT>
+          <DIRECTION/>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <HORS_PISTE_QLT_ID>100</HORS_PISTE_QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>100</CIEL_ID>
+          <CIEL_ID_APM>100</CIEL_ID_APM>
+          <DERNIERE_CHUTE/>
+          <DERNIERE_CHUTE_EN/>
+          <LIMITE_ISOTHERME_0/>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE/>
+          <INDICE_UV/>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+      </PARAMETRES>
+      <PARAMETRES>
+        <ZONE nom="J+1" altitude="1300" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="CHINAILLON">
+          <TEMPERATURE>+17</TEMPERATURE>
+          <TEMPERATURE_APM>+21</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+7</TEMPERATURE_RESSENTIE>
+          <NEIGE>0</NEIGE>
+          <CUMUL/>
+          <VENT>7</VENT>
+          <DIRECTION>SO</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>104</CIEL_ID>
+          <CIEL_ID_APM>106</CIEL_ID_APM>
+          <LIMITE_ISOTHERME_0>3900</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE>3600</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>4</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+        <ZONE nom="J+1 - MONT-LACHAT" altitude="2100" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="MONT-LACHAT">
+          <TEMPERATURE>+14</TEMPERATURE>
+          <TEMPERATURE_APM>+13</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+22</TEMPERATURE_RESSENTIE>
+          <NEIGE>0</NEIGE>
+          <CUMUL>0</CUMUL>
+          <VENT>22</VENT>
+          <DIRECTION>S</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>104</CIEL_ID>
+          <CIEL_ID_APM>106</CIEL_ID_APM>
+          <LIMITE_ISOTHERME_0>3900</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10>0</LIMITE_ISOTHERME_10>
+          <LIMITE_PLUIE_NEIGE>3600</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>0</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+      </PARAMETRES>
+      <PARAMETRES>
+        <ZONE nom="J+2" altitude="1300" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="CHINAILLON">
+          <TEMPERATURE>+12</TEMPERATURE>
+          <TEMPERATURE_APM>+18</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+7</TEMPERATURE_RESSENTIE>
+          <NEIGE>0</NEIGE>
+          <CUMUL/>
+          <VENT>7</VENT>
+          <DIRECTION>O</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>106</CIEL_ID>
+          <CIEL_ID_APM>104</CIEL_ID_APM>
+          <LIMITE_ISOTHERME_0>3900</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE>3100</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>4</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+        <ZONE nom="J+2 - MONT-LACHAT" altitude="2100" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="MONT-LACHAT">
+          <TEMPERATURE>+7</TEMPERATURE>
+          <TEMPERATURE_APM>+11</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+18</TEMPERATURE_RESSENTIE>
+          <NEIGE>0</NEIGE>
+          <CUMUL>0</CUMUL>
+          <VENT>18</VENT>
+          <DIRECTION>SO</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>106</CIEL_ID>
+          <CIEL_ID_APM>104</CIEL_ID_APM>
+          <LIMITE_ISOTHERME_0>3900</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10>0</LIMITE_ISOTHERME_10>
+          <LIMITE_PLUIE_NEIGE>3100</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>0</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+      </PARAMETRES>
+      <PARAMETRES>
+        <ZONE nom="J+3" altitude="1300" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="CHINAILLON">
+          <TEMPERATURE>+16</TEMPERATURE>
+          <TEMPERATURE_APM>+20</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+7</TEMPERATURE_RESSENTIE>
+          <NEIGE>0</NEIGE>
+          <CUMUL/>
+          <VENT>7</VENT>
+          <DIRECTION>O</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>101</CIEL_ID>
+          <CIEL_ID_APM>103</CIEL_ID_APM>
+          <LIMITE_ISOTHERME_0>3900</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10/>
+          <LIMITE_PLUIE_NEIGE>3400</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>4</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+        <ZONE nom="J+3 - MONT-LACHAT" altitude="2100" datemaj="03/07/2014 17:01:18" datemaj_en="07/03/2014 05:01:18 PM" reference="MONT-LACHAT">
+          <TEMPERATURE>+12</TEMPERATURE>
+          <TEMPERATURE_APM>+14</TEMPERATURE_APM>
+          <TEMPERATURE_RESSENTIE>+25</TEMPERATURE_RESSENTIE>
+          <NEIGE>0</NEIGE>
+          <CUMUL>0</CUMUL>
+          <VENT>25</VENT>
+          <DIRECTION>SO</DIRECTION>
+          <RAFALES>0</RAFALES>
+          <QUALITE/>
+          <QLT_ID>100</QLT_ID>
+          <VISIBILITE>100</VISIBILITE>
+          <CIEL_ID>101</CIEL_ID>
+          <CIEL_ID_APM>103</CIEL_ID_APM>
+          <LIMITE_ISOTHERME_0>3900</LIMITE_ISOTHERME_0>
+          <LIMITE_ISOTHERME_10>0</LIMITE_ISOTHERME_10>
+          <LIMITE_PLUIE_NEIGE>3400</LIMITE_PLUIE_NEIGE>
+          <INDICE_UV>0</INDICE_UV>
+          <RISQUE_ORAGE>0</RISQUE_ORAGE>
+        </ZONE>
+      </PARAMETRES>
+      <BULLETINS>
+        <COMMENTAIRES>
+          <LANGUE val="en"><![CDATA[Col de la Colombi??re open.
+
+SKI AREA IS CLOSED FOR THE SEASON 2013/2014.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[Col de la Colombi??re ouvert.
+
+LE DOMAINE SKIABLE EST FERM?? POUR LA SAISON 2013/2014.]]></LANGUE>
+        </COMMENTAIRES>
+        <JOUR>
+          <LANGUE val="en"><![CDATA[The sun will shine. Variable winds, light at most places.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[Soleil et ciel bleu pr??dominent. Vent variable faible. Cette nuit : Nuit ??toil??e, puis d??gradation nuageuse en fin de nuit.En fin de nuit vent de sud-est mod??r?? dans le Pays du Mont Blanc. Sur les autres r??gions, vent plus faible.]]></LANGUE>
+        </JOUR>
+        <LENDEMAIN>
+          <LANGUE val="en"><![CDATA[Rain and thunderstorm. Early in the day, moderate southeasterly wind Mont-Blanc region with gusts reaching 55 km/h ; decreasing later. Elsewhere lighter winds.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[Temps nuageux ?? tr??s nuageux, averses parfois orageuses en journ??e. En d??but de matin??e, vent de sud-est soufflant mod??r??ment dans le Pays du Mont Blanc, avec des rafales atteignant 55 km/h; puis att??nuation. Ailleurs, vent plus faible.]]></LANGUE>
+        </LENDEMAIN>
+        <SEMAINE>
+          <LANGUE val="en"/>
+          <LANGUE val="fr"/>
+        </SEMAINE>
+      </BULLETINS>
+      <INDICES nom="GRAND BORNAND">
+        <SKIABILITE val="0" lib="0 : station ferm??e"/>
+        <AMBIANCE val="2" lib="Non : pas de neige"/>
+        <RETOUR_SKI val="2" lib="Non : le retour n'est pas assur?? ou n'existe pas"/>
+        <ETAT_ROUTE val="0" lib="Routes d??gag??es, circulation normale"/>
+        <ETAT_CHAUSSEE val="8" lib="Non d??fini"/>
+        <PRATIQUE_ACTIVITES val="2" lib="Bonnes"/>
+        <STATION_OUVERTURE val="2" lib="Ferm??e (fin de saison)"/>
+        <STATION_PERIODE_HIVER debut="30/11/2013" debut_en="11/30/2013" fin="21/04/2014" fin_en="04/21/2014"/>
+        <STATION_PERIODE_ETE debut="14/06/2014" debut_en="06/14/2014" fin="14/09/2014" fin_en="09/14/2014"/>
+        <SKI_NUIT etat="0"/>
+        <SKI_AURORE etat="0"/>
+        <KM_SKATING ouvert="0"/>
+        <COMMENTAIRES>
+          <LANGUE val="en"><![CDATA[SKI AREA IS CLOSED FOR THE SEASON 2013/2014.
+
+Col de la Colombi??re closed.
+Road D12 is closed between St Pierre en Faucigny and Petit-Bornand les Gli??res from 31/03 to 15/06/14 for work. Deviation from Annecy.
+Ski lifts opening and slopes access may change at any time depending on weather conditions and various maintenance operations. Outside opening hours, the ski area is strictly prohibited.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[LE DOMAINE SKIABLE EST FERM?? POUR LA SAISON 2013/2014.
+
+Col de la Colombi??re ferm??.
+Attention, fermeture de la D12 entre St Pierre en Faucigny et Petit-Bornand les Gli??res du 31/03 au 15/06/14 pour travaux. D??viation par Annecy.
+L'ouverture des remont??es m??caniques et l'acc??s aux pistes peuvent ??voluer en fonction des conditions m??t??orologiques et des op??rations d'entretien et de maintenance. En dehors des heures d'ouverture, le domaine skiable est strictement interdit.]]></LANGUE>
+        </COMMENTAIRES>
+        <PISTES total="44" total_periode="44" total_periode_hpf="44" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="44" lng_total="0.0" lng_ouverts="0.0"/>
+        <PISTES_VERTES total="12" total_periode="12" total_periode_hpf="12" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="12" lng_total="0.0" lng_ouverts="0.0"/>
+        <PISTES_BLEUES total="15" total_periode="15" total_periode_hpf="15" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="15" lng_total="0.0" lng_ouverts="0.0"/>
+        <PISTES_ROUGES total="14" total_periode="14" total_periode_hpf="14" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="14" lng_total="0.0" lng_ouverts="0.0"/>
+        <PISTES_NOIRES total="3" total_periode="3" total_periode_hpf="3" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="3" lng_total="0.0" lng_ouverts="0.0"/>
+        <SKI_ALPIN total="44" total_periode="44" total_periode_hpf="44" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="44" lng_total="0.0" lng_ouverts="0.0"/>
+        <SKI_ALPIN_VERTES total="12" total_periode="12" total_periode_hpf="12" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="12" lng_total="0.0" lng_ouverts="0.0"/>
+        <SKI_ALPIN_BLEUES total="15" total_periode="15" total_periode_hpf="15" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="15" lng_total="0.0" lng_ouverts="0.0"/>
+        <SKI_ALPIN_ROUGES total="14" total_periode="14" total_periode_hpf="14" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="14" lng_total="0.0" lng_ouverts="0.0"/>
+        <SKI_ALPIN_NOIRES total="3" total_periode="3" total_periode_hpf="3" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="3" lng_total="0.0" lng_ouverts="0.0"/>
+        <KM_SKI_NORDIQUE etat="0" total="67.9" ouvert="0.0"/>
+        <SKI_NORDIQUE total="17" total_periode="17" total_periode_hpf="17" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="17" lng_total="67.9" lng_ouverts="0.0"/>
+        <SKI_NORDIQUE_VERTES total="7" total_periode="7" total_periode_hpf="7" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="7" lng_total="5.9" lng_ouverts="0.0"/>
+        <SKI_NORDIQUE_BLEUES total="4" total_periode="4" total_periode_hpf="4" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="4" lng_total="20.9" lng_ouverts="0.0"/>
+        <SKI_NORDIQUE_ROUGES total="3" total_periode="3" total_periode_hpf="3" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="3" lng_total="18.5" lng_ouverts="0.0"/>
+        <SKI_NORDIQUE_NOIRES total="3" total_periode="3" total_periode_hpf="3" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="3" lng_total="22.6" lng_ouverts="0.0"/>
+        <REMONTEES total="32" total_periode="32" total_periode_hpf="32" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="32">
+          <FUNI total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TB total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TC total="2" total_periode="2" total_periode_hpf="2" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="2"/>
+          <TPH total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TS total="13" total_periode="13" total_periode_hpf="13" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="13"/>
+          <TSD total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TK total="17" total_periode="17" total_periode_hpf="17" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="17"/>
+          <FNT total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TR total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TLC total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <ASC total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TSDB total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TMX total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <TRAIN total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+        </REMONTEES>
+        <PIETONS total="12" total_periode="12" total_periode_hpf="12" ouvertes_previsions="9" ouvertes="9" previsions="0" fermees="3" lng_total="47.5" lng_ouverts="35.0"/>
+        <RAQUETTES total="14" total_periode="14" total_periode_hpf="14" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="14" lng_total="61.0" lng_ouverts="0.0"/>
+        <LUGE total="4" total_periode="4" total_periode_hpf="4" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="4" lng_total="0.0" lng_ouverts="0.0"/>
+        <SNOWPARK total="8" total_periode="8" total_periode_hpf="8" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="8" lng_total="0.0" lng_ouverts="0.0">
+          <BIGAIR total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <BOX total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <CHILLZONE total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <HALFPIPE total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <HIP total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <AIRBAG total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <KICKER total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <QUATERPIPE total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <RAIL total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <STEPUP total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <WATERSLIDE total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <WHOOPS total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <BOARDERCROSS total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <VIDEOZONE total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+          <SPEEDZONE total="0" total_periode="0" total_periode_hpf="0" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="0"/>
+        </SNOWPARK>
+      </INDICES>
+    </METEO>
+    <ETATS>
+      <SECTEUR nom="ALPIN CHINAILLON">
+        <REMONTEE nom="TS LA FLORIA" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:05"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LE CHATELET" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:15"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LES GETTIERS" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="08:45" heurefin="17:15"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LES OUTALAYS" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="FIL NEIGE LE CASTOR" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="FIL NEIGE LE LUTIN" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LA MULATERIE" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:30"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE BABY" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE STADE" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE VENAY" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <PISTE nom="ESPACE DEBUTANTS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA PISTE DU LAC" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA SERPENTINE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE VENAY" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES EGLANTINES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES FOUGERES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES VIOLETTES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="L ABONDANCE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES ANCELLES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES CYCLAMENS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES TAVAILLONS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE BOIS JOLI" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE STADE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES GENTIANES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES PESSOTAYS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA NOIRE DES PYLONES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="N" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="ALPIN JOYERE">
+        <REMONTEE nom="TC LA JOYERE" etat="F" type="TC" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TC LE ROSAY" etat="F" type="TC" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="08:45" heurefin="17:05"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LA TAVERNE" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LE CRET" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE CROZAT" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LES ARCES" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LES COMBES" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <PISTE nom="LA SAPINIERE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES MOUSSERONS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES CHANTERELLES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES TROLLES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES ENVERS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="ALPIN LACHAT">
+        <REMONTEE nom="TS LE LACHAT" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:15" heurefin="16:30"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:15" heurefin="16:50"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:15" heurefin="16:30"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LES LANGUIERES" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TELECORDE JUNIOR" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:15"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LA COTE" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:20"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE CHATILLON" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE ROSAY" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:15"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LES RAICHES" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:05"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <PISTE nom="ESPACE DEBUTANTS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="L AZALEE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA COTE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="COL DE CHATILLON" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE GYPAETE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES LANCHES BAS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES LANCHES HAUT" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="PISTE 2000" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA NOIRE DE LACHAT" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="N" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="ALPIN MAROLY">
+        <REMONTEE nom="TS LA DUCHE" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LA TOLAR" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:05"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:45"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LE MAROLY" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:50"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LES ANNES" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TS LES TERRES ROUGES" etat="F" type="TS" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:20"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:20"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:20"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK L ALMET" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:15"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:15"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:15"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE PRARIAN 1" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <REMONTEE nom="TK LE PRARIAN 2" etat="F" type="TK" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <MSG_ASSOCIE val="fr"><![CDATA[Ferm??e pour la saison]]></MSG_ASSOCIE>
+          <MSG_ASSOCIE val="en"><![CDATA[Closed for the season]]></MSG_ASSOCIE>
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="16:30"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </REMONTEE>
+        <PISTE nom="L ALMET" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA DUCHE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE COL DES ANNES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE PERCE-NEIGE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES AIRELLES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES PRIMEVERES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES RHODOS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES TARINES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA COMBE DE LA TOLAR" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA PISTE DES DAMES" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE FENIL" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE TETRAS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES CHARDONS BLANCS" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="COULOIR DE LA SONNERIE" etat="F" type="A" msg="                                                                                                                                                                                                        " niveau="N" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="NORDIQUE CHINAILLON">
+        <PISTE nom="LA BOUVARDIERE" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="1400" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES MOUILLES" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="4000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="COTAGNE" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="1600" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA TANNAZ" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="N" entretien_txt="" entretien_num="0" longueur="2400" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="NORDIQUE VILLAGE - VALLEE DU BOUCHET">
+        <PISTE nom="ESPACE APPRENTISSAGE LORMAY" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ESPACE APPRENTISSAGE POCHES" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ESPACE APPRENTISSAGE VILLAGE" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE PLAT DES PLANS 2,1 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="2100" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LORMAY 1,1 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="1100" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="TERRET 1,3 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="1300" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA DEVALEE 7,2 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="7200" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE BOUCHET 4,7 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="4700" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES VERNES 5 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="B" entretien_txt="" entretien_num="0" longueur="5000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES PETAYS 8,7 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="8700" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES POCHES 8,2 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="R" entretien_txt="" entretien_num="0" longueur="8200" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA BORNANDINE 15,5 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="N" entretien_txt="" entretien_num="0" longueur="15500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LIAISON LES CONFINS 4,7 KM" etat="F" type="F" msg="                                                                                                                                                                                                        " niveau="N" entretien_txt="" entretien_num="0" longueur="4700" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="2" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="3" pgh_id="1" heuredeb="09:00" heurefin="17:00"/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="PIETONS">
+        <PISTE nom="LA JOYERE-LE GRAND BORNAND 3,5 KM." etat="F" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA MOTTAZ-L'ARBELAY 1 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="1000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA VALLEE DU BOUCHET 7,5 KM." etat="F" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="7500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE BORNE 2 KM." etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="2000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE CRET-LE RECHAT 3 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE ROSAY-CHINAILLON 1,5 KM" etat="F" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="1500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE TERRET 3 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE VIEUX VILLAGE-LA MAZERIE 3 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE VILLAGE-LE CROIX 3,5 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE VILLAGE-LES POTAIS 3 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES NANTS-LE MONT 2,5 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="2500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ROUTE DE LA DUCHE 14 KM" etat="O" type="PE" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="14000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="PISTE DE LUGE">
+        <PISTE nom="LE BORNE (VILLAGE)" etat="F" type="L" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE ROSAY (CHINAILLON)" etat="F" type="L" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE VENAY (CHINAILLON)" etat="F" type="L" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES DODES (VILLAGE)" etat="F" type="L" msg="                                                                                                                                                                                                        " niveau="V" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="RAQUETTES">
+        <PISTE nom="LA JOYERE-LE GRAND BORNAND 3,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LA VALLEE DU BOUCHET 7,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="7500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE BALCON DES ARAVIS 4 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="4000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE BORNE 2 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="2000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE CHINAILLON-LE GRAND BORNAND 6,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="6500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE NANT ROBERT - LES POCHES 3 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE PETIT BALCON DES ARAVIS 3,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="3500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE REPLAIN-LA COMMUNAILLE 4,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="4500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE ROSAY-LA JOYERE 1,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="1500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE ROSAY-LA PLACE 1,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="1500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LE VIEUX VILLAGE DU CHINAILLON 6,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="6500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES DODES 2,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="2500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="LES FRASSES JACQUIERS 5,5 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="5500" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="SUR FRETES 9 KM" etat="F" type="SN" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="9000" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+      <SECTEUR nom="SNOWPARK">
+        <PISTE nom="BIG AIR BAG" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="BOARDERCROSS MAROLY" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="BOARDERCROSS MULATERIE" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ESPACE CONFIRMES" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ESPACE DEBUTANT" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ESPACE INITIATION" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="HALFPIPE" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+        <PISTE nom="ZONE RAILS" etat="F" type="S" msg="                                                                                                                                                                                                        " niveau="" entretien_txt="" entretien_num="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">
+          <PLAGES>
+            <PLAGE prd_id="1" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="2" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="3" pgh_id="" heuredeb="" heurefin=""/>
+            <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
+          </PLAGES>
+        </PISTE>
+      </SECTEUR>
+    </ETATS>
+  </STATION>
+</SKIPLAN>

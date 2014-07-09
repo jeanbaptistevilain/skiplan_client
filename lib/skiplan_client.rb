@@ -6,13 +6,13 @@ module SkiplanClient
 
   # Configuration defaults
   @config = {
-      :base_url => 'http://www.skiplan.com/php/genererXml.php?pays=france&region=alpes& station=legrandbornand&v=1'
+      :base_url => 'C:/Users/Simon/Desktop/Stage/GitHub/skiplan_client/data/lumi_response.xml'
   }
 
   def self.get_weather
     @info = []
 
-    xml = Nokogiri::XML(open(:base_url))
+    xml = Nokogiri::XML(open(@config[:base_url]))
 
     ciel_id_auj_mat = xml.xpath('//ZONE[@nom="CHINAILLON"]/CIEL_ID').text
     ciel_id_auj_apm = xml.xpath('//ZONE[@nom="CHINAILLON"]/CIEL_ID_APM').text
