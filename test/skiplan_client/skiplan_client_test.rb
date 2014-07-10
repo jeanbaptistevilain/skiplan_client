@@ -21,12 +21,17 @@ class SkiplanClientTest < Test::Unit::TestCase
 
   should 'test get_weather founction' do
 
+    config = SkiplanClient.configure('C:\Users\Simon\Desktop\Stage\GitHub\skiplan_client\data\lumi_response.xml')
     weather = SkiplanClient.get_weather
 
     assert_equal '101' , weather.auj_ciel_id_matin
     assert_equal '101' , weather.auj_ciel_id_apm
     assert_equal '104' , weather.dem_ciel_id_matin
     assert_equal '106' , weather.dem_ciel_id_apm
+    assert_equal '+12' , weather.auj_temp_matin
+    assert_equal '+20' , weather.auj_temp_apm
+    assert_equal '+17' , weather.dem_temp_matin
+    assert_equal '+21' , weather.dem_temp_apm
   end
 
   should 'change config url' do
