@@ -29,6 +29,4 @@ module SkiplanClient
                                :dem_ciel_id_apm => ciel_id_dem_apm)
     @info
   end
-
-
 end
