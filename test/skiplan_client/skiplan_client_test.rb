@@ -21,11 +21,19 @@ class SkiplanClientTest < Test::Unit::TestCase
 
   should 'test get_weather founction' do
 
-    test = SkiplanClient.get_weather
+    weather = SkiplanClient.get_weather
 
-    assert_equal '101' , test.auj_ciel_id_matin
-    assert_equal '101' , test.auj_ciel_id_apm
-    assert_equal '104' , test.dem_ciel_id_matin
-    assert_equal '106' , test.dem_ciel_id_apm
+    assert_equal '101' , weather.auj_ciel_id_matin
+    assert_equal '101' , weather.auj_ciel_id_apm
+    assert_equal '104' , weather.dem_ciel_id_matin
+    assert_equal '106' , weather.dem_ciel_id_apm
   end
+
+  should 'change config url' do
+
+    config = SkiplanClient.configure('http://api.openweathermap.org/data/2.5/forecast/daily?q=tokyo&mode=xml&units=metric&cnt=1')
+
+    assert_equal 'http://api.openweathermap.org/data/2.5/forecast/daily?q=tokyo&mode=xml&units=metric&cnt=1', config
+  end
+
 end

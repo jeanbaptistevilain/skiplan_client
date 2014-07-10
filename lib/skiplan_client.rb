@@ -9,6 +9,10 @@ module SkiplanClient
       :base_url => 'C:/Users/Simon/Desktop/Stage/GitHub/skiplan_client/data/lumi_response.xml'
   }
 
+  def self.configure(map = {})
+    @config[:base_url] = map
+  end
+
   def self.get_weather
     @info = []
 
