@@ -32,6 +32,12 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal '+20' , weather.auj_temp_apm
     assert_equal '+17' , weather.dem_temp_matin
     assert_equal '+21' , weather.dem_temp_apm
+    assert_equal '+4' , weather.auj_temp_rst
+    assert_equal '4' , weather.auj_vent_kmh
+    assert_equal 'SE' , weather.auj_vent_dir
+    assert_equal '0' , weather.auj_vit_rafales
+    assert_equal '100' , weather.visibilite
+
   end
 
   should 'change config url' do
