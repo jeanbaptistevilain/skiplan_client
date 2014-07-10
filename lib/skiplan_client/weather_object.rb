@@ -35,7 +35,11 @@ class WeatherObject
                 :auj_ciel_id_matin,
                 :auj_ciel_id_apm,
                 :dem_ciel_id_matin,
-                :dem_ciel_id_apm
+                :dem_ciel_id_apm,
+                :auj_temp_matin,
+                :auj_temp_apm,
+                :dem_temp_matin,
+                :dem_temp_apm
 
   def initialize(attributes = {})
                   @nom = attributes[:name]
@@ -74,6 +78,10 @@ class WeatherObject
                   @auj_ciel_id_apm = attributes[:auj_ciel_id_apm]
                   @dem_ciel_id_matin = attributes[:dem_ciel_id_matin]
                   @dem_ciel_id_apm = attributes[:dem_ciel_id_apm]
+                  @auj_temp_matin = attributes[:auj_temp_matin]
+                  @auj_temp_apm = attributes[:auj_temp_apm]
+                  @dem_temp_matin = attributes[:dem_temp_matin]
+                  @dem_temp_apm =  attributes[:dem_temp_apm]
 
   end
 end
