@@ -6,11 +6,11 @@ module SkiplanClient
 
   # Configuration defaults
   @config = {
-      :base_url => 'C:/Users/Simon/Desktop/Stage/GitHub/skiplan_client/data/lumi_response.xml'
+      :base_url => 'http://www.skiplan.com/php/genererXml.php?pays=france&region=alpes& station=legrandbornand&v=1'
   }
 
-  def self.configure(map = {})
-    @config[:base_url] = map
+  def self.configure(url)
+    @config[:base_url] = url
   end
 
   def self.get_weather
@@ -27,7 +27,6 @@ module SkiplanClient
                                :auj_ciel_id_apm => ciel_id_auj_apm,
                                :dem_ciel_id_matin => ciel_id_dem_mat,
                                :dem_ciel_id_apm => ciel_id_dem_apm)
-
     @info
   end
 
