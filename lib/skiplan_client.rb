@@ -22,10 +22,10 @@ module SkiplanClient
     ciel_id_auj_apm = xml.xpath('//ZONE[@nom="CHINAILLON"]/CIEL_ID_APM').text
     ciel_id_dem_mat = xml.xpath('//ZONE[@nom="J+1"]/CIEL_ID').text
     ciel_id_dem_apm = xml.xpath('//ZONE[@nom="J+1"]/CIEL_ID_APM').text
-    auj_temp_matin = doc.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE').text
-    auj_temp_apm = doc.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE_APM').text
-    dem_temp_matin = doc.xpath('//ZONE[@nom="J+1"]/TEMPERATURE').text
-    dem_temp_apm = doc.xpath('//ZONE[@nom="J+1"]/TEMPERATURE_APM').text
+    auj_temp_matin = xml.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE').text
+    auj_temp_apm = xml.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE_APM').text
+    dem_temp_matin = xml.xpath('//ZONE[@nom="J+1"]/TEMPERATURE').text
+    dem_temp_apm = xml.xpath('//ZONE[@nom="J+1"]/TEMPERATURE_APM').text
 
     @info = WeatherObject.new(:auj_ciel_id_matin => ciel_id_auj_mat,
                                :auj_ciel_id_apm => ciel_id_auj_apm,
