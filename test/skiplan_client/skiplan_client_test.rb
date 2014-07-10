@@ -24,5 +24,8 @@ class SkiplanClientTest < Test::Unit::TestCase
     test = SkiplanClient.get_weather
 
     assert_equal '101' , test.auj_ciel_id_matin
+    assert_equal '101' , test.auj_ciel_id_apm
+    assert_equal '104' , test.dem_ciel_id_matin
+    assert_equal '106' , test.dem_ciel_id_apm
   end
 end
