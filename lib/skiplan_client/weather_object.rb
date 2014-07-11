@@ -8,72 +8,73 @@ class WeatherObject
                 :auj_temp_apm,
                 :dem_temp_matin,
                 :dem_temp_apm,
-                :zone_nom,
-                :zone_altitude,
-                :date_heur_maj,
                 :auj_temp_rst,
                 :auj_vent_kmh,
                 :auj_vent_dir,
                 :auj_vit_rafales,
                 :visibilite,
-                :commentaire,
                 :meteo_jour,
+                :dem_vent_kmh,
+                :dem_vent_dir,
+                :dem_vit_rafales,
+                :dem_visibilite,
                 :meteo_lendemain,
-                :meteo_semaine,
-                :neige,
-                :cumul,
-                :neige_horspiste,
-                :lib_qualite,
-                :id_qualite,
-                :id_qualitehorspiste,
-                :date_dern_neige,
-                :indice_uv,
-                :risque_orage,
-                :rsq_reel,
-                :val_risque,
-                :lib_risque
+                :j2_mat_ciel_id,
+                :j2_apm_ciel_id,
+                :j2_temp_matin,
+                :j2_temp_apm,
+                :j2_vent_kmh,
+                :j2_vent_dir,
+                :j2_vit_rafales,
+                :j2_visibilite,
+                :j3_mat_ciel_id,
+                :j3_apm_ciel_id,
+                :j3_temp_matin,
+                :j3_temp_apm,
+                :j3_vent_kmh,
+                :j3_vent_dir,
+                :j3_vit_rafales,
+                :j3_visibilite,
+                :meteo_semaine
+
 
   def initialize(attributes = {})
-                  @nom = attributes[:name]
-                  @langue = attributes[:langue]
-                  @dateheur = attributes[:date_heur_maj]
-                  @zonenom = attributes[:zone_nom]
-                  @zonealtitude = attributes[:zone_altitude]
-                  @datemaj = attributes[:date_heur_maj]
-                  @reference = attributes[:reference_zone]
-                  @wrsqreel = attributes[:rsq_reel]
-                  @valrisque = attributes[:val_risque]
-                  @librisque = attributes[:lib_risque]
-                  @temperaturemtn = attributes[:temperature_mtn]
-                  @temperatureapm = attributes[:temperature_apm]
-                  @auj_temp_rst = attributes[:auj_temp_rst]
-                  @neige = attributes[:neige]
-                  @cumul = attributes[:cumul]
-                  @neigehorspiste = attributes[:neige_horspiste]
-                  @libqualite = attributes[:lib_qualite]
-                  @idqualite = attributes[:id_qualite]
-                  @idqualitehorspiste = attributes[:id_qualitehorspiste]
-                  @datelastsnow = attributes[:date_dern_neige]
-                  @auj_vent_kmh = attributes[:auj_vent_kmh]
-                  @auj_vent_dir = attributes[:auj_vent_dir]
-                  @auj_vit_rafales = attributes[:auj_vit_rafales]
-                  @visibilite = attributes[:visibilite]
-                  @id_ciel_mtn = attributes[:id_ciel_mtn]
-                  @id_ciel_apm = attributes[:id_ciel_apm]
-                  @indice_uv = attributes[:indice_uv]
-                  @risque_orage = attributes[:risque_orage]
-                  @commentaire = attributes[:commentaire]
-                  @meteo_jour = attributes[:meteo_jour]
-                  @meteo_lendemain = attributes[:meteo_lendemain]
-                  @meteo_semaine = attributes[:meteo_semaine]
-                  @auj_ciel_id_matin = attributes[:auj_ciel_id_matin]
-                  @auj_ciel_id_apm = attributes[:auj_ciel_id_apm]
-                  @dem_ciel_id_matin = attributes[:dem_ciel_id_matin]
-                  @dem_ciel_id_apm = attributes[:dem_ciel_id_apm]
-                  @auj_temp_matin = attributes[:auj_temp_matin]
-                  @auj_temp_apm = attributes[:auj_temp_apm]
-                  @dem_temp_matin = attributes[:dem_temp_matin]
-                  @dem_temp_apm =  attributes[:dem_temp_apm]
+                                  @auj_ciel_id_matin = attributes[:auj_ciel_id_matin]
+                                  @auj_ciel_id_apm = attributes[:auj_ciel_id_apm]
+                                  @dem_ciel_id_matin = attributes[:dem_ciel_id_matin]
+                                  @dem_ciel_id_apm = attributes[:dem_ciel_id_apm]
+                                  @auj_temp_matin = attributes[:auj_temp_matin]
+                                  @auj_temp_apm = attributes[:auj_temp_apm]
+                                  @dem_temp_matin = attributes[:dem_temp_matin]
+                                  @dem_temp_apm = attributes[:dem_temp_apm]
+                                  @auj_temp_rst = attributes[:auj_temp_rst]
+                                  @auj_vent_kmh = attributes[:auj_vent_kmh]
+                                  @auj_vent_dir = attributes[:auj_vent_dir]
+                                  @auj_vit_rafales = attributes[:auj_vit_rafales]
+                                  @visibilite = attributes[:visibilite]
+                                  @meteo_jour = attributes[:meteo_jour]
+                                  @dem_vent_kmh = attributes[:dem_vent_kmh]
+                                  @dem_vent_dir = attributes[:dem_vent_dir]
+                                  @dem_vit_rafales = attributes[:dem_vit_rafales]
+                                  @dem_visibilite = attributes[:dem_visibilite]
+                                  @meteo_lendemain = attributes[:meteo_lendemain]
+                                  @j2_mat_ciel_id = attributes[:j2_mat_ciel_id]
+                                  @j2_apm_ciel_id = attributes[:j2_apm_ciel_id]
+                                  @j2_temp_matin = attributes[:j2_temp_matin]
+                                  @j2_temp_apm = attributes[:j2_temp_apm]
+                                  @j2_vent_kmh = attributes[:j2_vent_kmh]
+                                  @j2_vent_dir = attributes[:j2_vent_dir]
+                                  @j2_vit_rafales = attributes[:j2_vit_rafales]
+                                  @j2_visibilite = attributes[:j2_visibilite]
+                                  @j3_mat_ciel_id = attributes[:j3_mat_ciel_id]
+                                  @j3_apm_ciel_id = attributes[:j3_apm_ciel_id]
+                                  @j3_temp_matin = attributes[:j3_temp_matin]
+                                  @j3_temp_apm = attributes[:j3_temp_apm]
+                                  @j3_vent_kmh = attributes[:j3_vent_kmh]
+                                  @j3_vent_dir = attributes[:j3_vent_dir]
+                                  @j3_vit_rafales = attributes[:j3_vit_rafales]
+                                  @j3_visibilite = attributes[:j3_visibilite]
+                                  @meteo_semaine = attributes[:meteo_semaine]
 
   end
 end
