@@ -25,7 +25,7 @@ class SkiplanClientTest < Test::Unit::TestCase
     dem = 'Temps nuageux ?? tr??s nuageux, averses parfois orageuses en journ??e. En d??but de matin??e, vent de sud-est soufflant mod??r??ment dans le Pays du Mont Blanc, avec des rafales atteignant 55 km/h; puis att??nuation. Ailleurs, vent plus faible.'
     semaine = ""
 
-    config = SkiplanClient.configure('C:\Users\Simon\Desktop\Stage\GitHub\skiplan_client\data\lumi_response.xml')
+    config = SkiplanClient.configure('../../data/lumi_response.xml')
     weather = SkiplanClient.get_weather
 
     assert_equal '101' , weather.auj_ciel_id_matin
