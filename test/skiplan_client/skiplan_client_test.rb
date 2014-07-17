@@ -8,25 +8,13 @@ require 'skiplan_client/weather_object'
 
 class SkiplanClientTest < Test::Unit::TestCase
 
-  should 'test nokogiri open and xpath text function' do
-
-    xml = Nokogiri::XML(open('http://api.openweathermap.org/data/2.5/forecast/daily?q=tokyo&mode=xml&units=metric&cnt=1'))
-    city = xml.xpath('//name').text
-    country = xml.xpath('//country').text
-
-    assert_equal 'Tokyo', city
-    assert_equal 'JP', country
-
-  end
-
-  should 'test get_weather founction' do
+  should 'retrieve weather data' do
 
     jour = 'Soleil et ciel bleu pr??dominent. Vent variable faible. Cette nuit : Nuit ??toil??e, puis d??gradation nuageuse en fin de nuit.En fin de nuit vent de sud-est mod??r?? dans le Pays du Mont Blanc. Sur les autres r??gions, vent plus faible.'
     dem = 'Temps nuageux ?? tr??s nuageux, averses parfois orageuses en journ??e. En d??but de matin??e, vent de sud-est soufflant mod??r??ment dans le Pays du Mont Blanc, avec des rafales atteignant 55 km/h; puis att??nuation. Ailleurs, vent plus faible.'
-    semaine = ""
 
-    config = SkiplanClient.configure('../../data/lumi_response.xml')
-    weather = SkiplanClient.get_weather
+    SkiplanClient.configure('../../data/lumi_response.xml')
+    weather = SkiplanClient.get_weather('CHINAILLON')
 
     assert_equal '101' , weather.auj_ciel_id_matin
     assert_equal '101' , weather.auj_ciel_id_apm
@@ -66,6 +54,30 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal '0'   , weather.j3_vit_rafales
     assert_equal '100' , weather.j3_visibilite
     assert_equal ''    , weather.meteo_semaine
+
+  end
+
+  should 'retrieve weather data for provided zone' do
+
+    SkiplanClient.configure('../../data/lumi_response.xml')
+    weather = SkiplanClient.get_weather('MONT-LACHAT')
+
+    assert_equal '101' , weather.auj_ciel_id_matin
+    assert_equal '101' , weather.auj_ciel_id_apm
+    assert_equal '+10' , weather.auj_temp_matin
+    assert_equal '+14' , weather.auj_temp_apm
+    assert_equal '104' , weather.dem_ciel_id_matin
+    assert_equal '106' , weather.dem_ciel_id_apm
+    assert_equal '+14' , weather.dem_temp_matin
+    assert_equal '+13' , weather.dem_temp_apm
+    assert_equal '106' , weather.j2_mat_ciel_id
+    assert_equal '104' , weather.j2_apm_ciel_id
+    assert_equal '+7' , weather.j2_temp_matin
+    assert_equal '+11' , weather.j2_temp_apm
+    assert_equal '101' , weather.j3_mat_ciel_id
+    assert_equal '103' , weather.j3_apm_ciel_id
+    assert_equal '+12' , weather.j3_temp_matin
+    assert_equal '+14' , weather.j3_temp_apm
 
   end
 

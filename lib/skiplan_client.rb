@@ -13,46 +13,56 @@ module SkiplanClient
     @config[:base_url] = url
   end
 
-  def self.get_weather
+  def self.get_weather(zone)
     @info = []
 
     xml = Nokogiri::XML(open(@config[:base_url]))
 
-    ciel_id_auj_mat = xml.xpath('//ZONE[@nom="CHINAILLON"]/CIEL_ID').text
-    ciel_id_auj_apm = xml.xpath('//ZONE[@nom="CHINAILLON"]/CIEL_ID_APM').text
-    auj_temp_matin  = xml.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE').text
-    auj_temp_apm    = xml.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE_APM').text
-    auj_temp_rst    = xml.xpath('//ZONE[@nom="CHINAILLON"]/TEMPERATURE_RESSENTIE').text
-    auj_vent_kmh    = xml.xpath('//ZONE[@nom="CHINAILLON"]/VENT').text
-    auj_vent_dir    = xml.xpath('//ZONE[@nom="CHINAILLON"]/DIRECTION').text
-    auj_vit_rafales = xml.xpath('//ZONE[@nom="CHINAILLON"]/RAFALES').text
-    auj_visibilite  = xml.xpath('//ZONE[@nom="CHINAILLON"]/VISIBILITE').text
+    today_element = xml.xpath('//ZONE[@nom="' + zone + '"]')
+    ciel_id_auj_mat = today_element.xpath('./CIEL_ID').text
+    ciel_id_auj_apm = today_element.xpath('./CIEL_ID_APM').text
+    auj_temp_matin  = today_element.xpath('./TEMPERATURE').text
+    auj_temp_apm    = today_element.xpath('./TEMPERATURE_APM').text
+    auj_temp_rst    = today_element.xpath('./TEMPERATURE_RESSENTIE').text
+    auj_vent_kmh    = today_element.xpath('./VENT').text
+    auj_vent_dir    = today_element.xpath('./DIRECTION').text
+    auj_vit_rafales = today_element.xpath('./RAFALES').text
+    auj_visibilite  = today_element.xpath('./VISIBILITE').text
+
     meteo_jour      = xml.xpath('//JOUR/LANGUE[@val="fr"]').text
-    ciel_id_dem_mat = xml.xpath('//ZONE[@nom="J+1"]/CIEL_ID').text
-    ciel_id_dem_apm = xml.xpath('//ZONE[@nom="J+1"]/CIEL_ID_APM').text
-    dem_temp_matin  = xml.xpath('//ZONE[@nom="J+1"]/TEMPERATURE').text
-    dem_temp_apm    = xml.xpath('//ZONE[@nom="J+1"]/TEMPERATURE_APM').text
-    dem_vent_kmh    = xml.xpath('//ZONE[@nom="J+1"]/VENT').text
-    dem_vent_dir    = xml.xpath('//ZONE[@nom="J+1"]/DIRECTION').text
-    dem_vit_rafales = xml.xpath('//ZONE[@nom="J+1"]/RAFALES').text
-    dem_visibilite  = xml.xpath('//ZONE[@nom="J+1"]/VISIBILITE').text
+
+    tomorrow_element = xml.xpath('//ZONE[starts-with(@nom,"J+1") and @reference="' + zone + '"]')
+    ciel_id_dem_mat = tomorrow_element.xpath('./CIEL_ID').text
+    ciel_id_dem_apm = tomorrow_element.xpath('./CIEL_ID_APM').text
+    dem_temp_matin  = tomorrow_element.xpath('./TEMPERATURE').text
+    dem_temp_apm    = tomorrow_element.xpath('./TEMPERATURE_APM').text
+    dem_vent_kmh    = tomorrow_element.xpath('./VENT').text
+    dem_vent_dir    = tomorrow_element.xpath('./DIRECTION').text
+    dem_vit_rafales = tomorrow_element.xpath('./RAFALES').text
+    dem_visibilite  = tomorrow_element.xpath('./VISIBILITE').text
+
     meteo_lendemain = xml.xpath('//LENDEMAIN/LANGUE[@val="fr"]').text
-    j2_mat_ciel_id  = xml.xpath('//ZONE[@nom="J+2"]/CIEL_ID').text
-    j2_apm_ciel_id  = xml.xpath('//ZONE[@nom="J+2"]/CIEL_ID_APM').text
-    j2_temp_matin   = xml.xpath('//ZONE[@nom="J+2"]/TEMPERATURE').text
-    j2_temp_apm     = xml.xpath('//ZONE[@nom="J+2"]/TEMPERATURE_APM').text
-    j2_vent_kmh     = xml.xpath('//ZONE[@nom="J+2"]/VENT').text
-    j2_vent_dir     = xml.xpath('//ZONE[@nom="J+2"]/DIRECTION').text
-    j2_vit_rafales  = xml.xpath('//ZONE[@nom="J+2"]/RAFALES').text
-    j2_visibilite   = xml.xpath('//ZONE[@nom="J+2"]/VISIBILITE').text
-    j3_mat_ciel_id  = xml.xpath('//ZONE[@nom="J+3"]/CIEL_ID').text
-    j3_apm_ciel_id  = xml.xpath('//ZONE[@nom="J+3"]/CIEL_ID_APM').text
-    j3_temp_matin   = xml.xpath('//ZONE[@nom="J+3"]/TEMPERATURE').text
-    j3_temp_apm     = xml.xpath('//ZONE[@nom="J+3"]/TEMPERATURE_APM').text
-    j3_vent_kmh     = xml.xpath('//ZONE[@nom="J+3"]/VENT').text
-    j3_vent_dir     = xml.xpath('//ZONE[@nom="J+3"]/DIRECTION').text
-    j3_vit_rafales  = xml.xpath('//ZONE[@nom="J+3"]/RAFALES').text
-    j3_visibilite   = xml.xpath('//ZONE[@nom="J+3"]/VISIBILITE').text
+
+    j2_element = xml.xpath('//ZONE[starts-with(@nom,"J+2") and @reference="' + zone + '"]')
+    j2_mat_ciel_id  = j2_element.xpath('./CIEL_ID').text
+    j2_apm_ciel_id  = j2_element.xpath('./CIEL_ID_APM').text
+    j2_temp_matin   = j2_element.xpath('./TEMPERATURE').text
+    j2_temp_apm     = j2_element.xpath('./TEMPERATURE_APM').text
+    j2_vent_kmh     = j2_element.xpath('./VENT').text
+    j2_vent_dir     = j2_element.xpath('./DIRECTION').text
+    j2_vit_rafales  = j2_element.xpath('./RAFALES').text
+    j2_visibilite   = j2_element.xpath('./VISIBILITE').text
+
+    j3_element = xml.xpath('//ZONE[starts-with(@nom,"J+3") and @reference="' + zone + '"]')
+    j3_mat_ciel_id  = j3_element.xpath('./CIEL_ID').text
+    j3_apm_ciel_id  = j3_element.xpath('./CIEL_ID_APM').text
+    j3_temp_matin   = j3_element.xpath('./TEMPERATURE').text
+    j3_temp_apm     = j3_element.xpath('./TEMPERATURE_APM').text
+    j3_vent_kmh     = j3_element.xpath('./VENT').text
+    j3_vent_dir     = j3_element.xpath('./DIRECTION').text
+    j3_vit_rafales  = j3_element.xpath('./RAFALES').text
+    j3_visibilite   = j3_element.xpath('./VISIBILITE').text
+
     meteo_semaine   = xml.xpath('//SEMAINE/LANGUE[@val="fr"]').text
 
 
