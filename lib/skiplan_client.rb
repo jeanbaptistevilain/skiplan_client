@@ -1,12 +1,15 @@
 require 'skiplan_client/version'
+require 'skiplan_client/forecast'
+require 'skiplan_client/metrics'
 require 'open-uri'
 require 'nokogiri'
+require 'active_support/core_ext/hash/conversions'
 
 module SkiplanClient
 
   # Configuration defaults
   @config = {
-      :base_url => 'http://www.skiplan.com/php/genererXml.php?pays=france&region=alpes& station=legrandbornand&v=1'
+      :base_url => 'http://www.skiplan.com/php/genererXml.php?pays=france&region=alpes&station=legrandbornand&v=1'
   }
 
   def self.configure(url)
@@ -14,94 +17,24 @@ module SkiplanClient
   end
 
   def self.get_weather(zone)
-    @info = []
-
     xml = Nokogiri::XML(open(@config[:base_url]))
+    weather = WeatherObject.new
 
     today_element = xml.xpath('//ZONE[@nom="' + zone + '"]')
-    ciel_id_auj_mat = today_element.xpath('./CIEL_ID').text
-    ciel_id_auj_apm = today_element.xpath('./CIEL_ID_APM').text
-    auj_temp_matin  = today_element.xpath('./TEMPERATURE').text
-    auj_temp_apm    = today_element.xpath('./TEMPERATURE_APM').text
-    auj_temp_rst    = today_element.xpath('./TEMPERATURE_RESSENTIE').text
-    auj_vent_kmh    = today_element.xpath('./VENT').text
-    auj_vent_dir    = today_element.xpath('./DIRECTION').text
-    auj_vit_rafales = today_element.xpath('./RAFALES').text
-    auj_visibilite  = today_element.xpath('./VISIBILITE').text
-
-    meteo_jour      = xml.xpath('//JOUR/LANGUE[@val="fr"]').text
+    weather.forecasts['j'] = Forecast.new(Hash.from_xml(today_element.to_s)['ZONE'])
 
     tomorrow_element = xml.xpath('//ZONE[starts-with(@nom,"J+1") and @reference="' + zone + '"]')
-    ciel_id_dem_mat = tomorrow_element.xpath('./CIEL_ID').text
-    ciel_id_dem_apm = tomorrow_element.xpath('./CIEL_ID_APM').text
-    dem_temp_matin  = tomorrow_element.xpath('./TEMPERATURE').text
-    dem_temp_apm    = tomorrow_element.xpath('./TEMPERATURE_APM').text
-    dem_vent_kmh    = tomorrow_element.xpath('./VENT').text
-    dem_vent_dir    = tomorrow_element.xpath('./DIRECTION').text
-    dem_vit_rafales = tomorrow_element.xpath('./RAFALES').text
-    dem_visibilite  = tomorrow_element.xpath('./VISIBILITE').text
-
-    meteo_lendemain = xml.xpath('//LENDEMAIN/LANGUE[@val="fr"]').text
+    weather.forecasts['j+1'] = Forecast.new(Hash.from_xml(tomorrow_element.to_s)['ZONE'])
 
     j2_element = xml.xpath('//ZONE[starts-with(@nom,"J+2") and @reference="' + zone + '"]')
-    j2_mat_ciel_id  = j2_element.xpath('./CIEL_ID').text
-    j2_apm_ciel_id  = j2_element.xpath('./CIEL_ID_APM').text
-    j2_temp_matin   = j2_element.xpath('./TEMPERATURE').text
-    j2_temp_apm     = j2_element.xpath('./TEMPERATURE_APM').text
-    j2_vent_kmh     = j2_element.xpath('./VENT').text
-    j2_vent_dir     = j2_element.xpath('./DIRECTION').text
-    j2_vit_rafales  = j2_element.xpath('./RAFALES').text
-    j2_visibilite   = j2_element.xpath('./VISIBILITE').text
+    weather.forecasts['j+2'] = Forecast.new(Hash.from_xml(j2_element.to_s)['ZONE'])
 
     j3_element = xml.xpath('//ZONE[starts-with(@nom,"J+3") and @reference="' + zone + '"]')
-    j3_mat_ciel_id  = j3_element.xpath('./CIEL_ID').text
-    j3_apm_ciel_id  = j3_element.xpath('./CIEL_ID_APM').text
-    j3_temp_matin   = j3_element.xpath('./TEMPERATURE').text
-    j3_temp_apm     = j3_element.xpath('./TEMPERATURE_APM').text
-    j3_vent_kmh     = j3_element.xpath('./VENT').text
-    j3_vent_dir     = j3_element.xpath('./DIRECTION').text
-    j3_vit_rafales  = j3_element.xpath('./RAFALES').text
-    j3_visibilite   = j3_element.xpath('./VISIBILITE').text
+    weather.forecasts['j+3'] = Forecast.new(Hash.from_xml(j3_element.to_s)['ZONE'])
 
-    meteo_semaine   = xml.xpath('//SEMAINE/LANGUE[@val="fr"]').text
+    metrics = xml.xpath('//INDICES')
+    weather.metrics = Metrics.new(Hash.from_xml(metrics.to_s)['INDICES'])
 
-
-    @info = WeatherObject.new( :auj_ciel_id_matin => ciel_id_auj_mat,
-                               :auj_ciel_id_apm   => ciel_id_auj_apm,
-                               :dem_ciel_id_matin => ciel_id_dem_mat,
-                               :dem_ciel_id_apm   => ciel_id_dem_apm,
-                               :auj_temp_matin    => auj_temp_matin,
-                               :auj_temp_apm      => auj_temp_apm,
-                               :dem_temp_matin    => dem_temp_matin,
-                               :dem_temp_apm      => dem_temp_apm,
-                               :auj_temp_rst      => auj_temp_rst,
-                               :auj_vent_kmh      => auj_vent_kmh,
-                               :auj_vent_dir      => auj_vent_dir,
-                               :auj_vit_rafales   => auj_vit_rafales,
-                               :visibilite        => auj_visibilite,
-                               :meteo_jour        => meteo_jour,
-                               :dem_vent_kmh      => dem_vent_kmh,
-                               :dem_vent_dir      => dem_vent_dir,
-                               :dem_vit_rafales   => dem_vit_rafales,
-                               :dem_visibilite    => dem_visibilite,
-                               :meteo_lendemain   => meteo_lendemain,
-                               :j2_mat_ciel_id    => j2_mat_ciel_id,
-                               :j2_apm_ciel_id    => j2_apm_ciel_id,
-                               :j2_temp_matin     => j2_temp_matin,
-                               :j2_temp_apm       => j2_temp_apm,
-                               :j2_vent_kmh       => j2_vent_kmh,
-                               :j2_vent_dir       => j2_vent_dir,
-                               :j2_vit_rafales    => j2_vit_rafales,
-                               :j2_visibilite     => j2_visibilite,
-                               :j3_mat_ciel_id    => j3_mat_ciel_id,
-                               :j3_apm_ciel_id    => j3_apm_ciel_id,
-                               :j3_temp_matin     => j3_temp_matin,
-                               :j3_temp_apm       => j3_temp_apm,
-                               :j3_vent_kmh       => j3_vent_kmh,
-                               :j3_vent_dir       => j3_vent_dir,
-                               :j3_vit_rafales    => j3_vit_rafales,
-                               :j3_visibilite     => j3_visibilite,
-                               :meteo_semaine     => meteo_semaine)
-    @info
+    weather
   end
 end

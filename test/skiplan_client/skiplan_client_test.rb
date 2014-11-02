@@ -10,82 +10,58 @@ class SkiplanClientTest < Test::Unit::TestCase
 
   should 'retrieve weather data' do
 
-    jour = 'Soleil et ciel bleu pr??dominent. Vent variable faible. Cette nuit : Nuit ??toil??e, puis d??gradation nuageuse en fin de nuit.En fin de nuit vent de sud-est mod??r?? dans le Pays du Mont Blanc. Sur les autres r??gions, vent plus faible.'
-    dem = 'Temps nuageux ?? tr??s nuageux, averses parfois orageuses en journ??e. En d??but de matin??e, vent de sud-est soufflant mod??r??ment dans le Pays du Mont Blanc, avec des rafales atteignant 55 km/h; puis att??nuation. Ailleurs, vent plus faible.'
-
     SkiplanClient.configure('../../data/lumi_response.xml')
     weather = SkiplanClient.get_weather('CHINAILLON')
 
-    assert_equal '101' , weather.auj_ciel_id_matin
-    assert_equal '101' , weather.auj_ciel_id_apm
-    assert_equal '104' , weather.dem_ciel_id_matin
-    assert_equal '106' , weather.dem_ciel_id_apm
-    assert_equal '+12' , weather.auj_temp_matin
-    assert_equal '+20' , weather.auj_temp_apm
-    assert_equal '+17' , weather.dem_temp_matin
-    assert_equal '+21' , weather.dem_temp_apm
-    assert_equal '+4'  , weather.auj_temp_rst
-    assert_equal '4'   , weather.auj_vent_kmh
-    assert_equal 'SE'  , weather.auj_vent_dir
-    assert_equal '0'   , weather.auj_vit_rafales
-    assert_equal '100' , weather.visibilite
-    assert_equal jour  , weather.meteo_jour
-    assert_equal '+17' , weather.dem_temp_matin
-    assert_equal '+21' , weather.dem_temp_apm
-    assert_equal '7'   , weather.dem_vent_kmh
-    assert_equal 'SO'  , weather.dem_vent_dir
-    assert_equal '0'   , weather.dem_vit_rafales
-    assert_equal '100' , weather.dem_visibilite
-    assert_equal dem   , weather.meteo_lendemain
-    assert_equal '106' , weather.j2_mat_ciel_id
-    assert_equal '104' , weather.j2_apm_ciel_id
-    assert_equal '+12' , weather.j2_temp_matin
-    assert_equal '+18' , weather.j2_temp_apm
-    assert_equal '7'   , weather.j2_vent_kmh
-    assert_equal 'O'   , weather.j2_vent_dir
-    assert_equal '0'   , weather.j2_vit_rafales
-    assert_equal '100' , weather.j2_visibilite
-    assert_equal '101' , weather.j3_mat_ciel_id
-    assert_equal '103' , weather.j3_apm_ciel_id
-    assert_equal '+16' , weather.j3_temp_matin
-    assert_equal '+20' , weather.j3_temp_apm
-    assert_equal '7'   , weather.j3_vent_kmh
-    assert_equal 'O'   , weather.j3_vent_dir
-    assert_equal '0'   , weather.j3_vit_rafales
-    assert_equal '100' , weather.j3_visibilite
-    assert_equal ''    , weather.meteo_semaine
+    today_forecast = weather.forecasts['j']
+    assert_equal '101' , today_forecast.weather_am
+    assert_equal '101' , today_forecast.weather_pm
+    assert_equal '+12' , today_forecast.temp_am
+    assert_equal '+20' , today_forecast.temp_pm
+    assert_equal '+4'  , today_forecast.temp_felt
+    assert_equal '4'   , today_forecast.wind_speed
+    assert_equal 'SE'  , today_forecast.wind_dir
 
+    tomorrow_forecast = weather.forecasts['j+1']
+    assert_equal '104' , tomorrow_forecast.weather_am
+    assert_equal '106' , tomorrow_forecast.weather_pm
+    assert_equal '+17' , tomorrow_forecast.temp_am
+    assert_equal '+21' , tomorrow_forecast.temp_pm
+    assert_equal '7'   , tomorrow_forecast.wind_speed
+    assert_equal 'SO'  , tomorrow_forecast.wind_dir
+
+    j2_forecast = weather.forecasts['j+2']
+    assert_equal '106' , j2_forecast.weather_am
+    assert_equal '104' , j2_forecast.weather_pm
+    assert_equal '+12' , j2_forecast.temp_am
+    assert_equal '+18' , j2_forecast.temp_pm
+    assert_equal '7'   , j2_forecast.wind_speed
+    assert_equal 'O'  , j2_forecast.wind_dir
+
+    j3_forecast = weather.forecasts['j+3']
+    assert_equal '101' , j3_forecast.weather_am
+    assert_equal '103' , j3_forecast.weather_pm
+    assert_equal '+16' , j3_forecast.temp_am
+    assert_equal '+20' , j3_forecast.temp_pm
+    assert_equal '7'   , j3_forecast.wind_speed
+    assert_equal 'O'  , j3_forecast.wind_dir
   end
 
-  should 'retrieve weather data for provided zone' do
-
+  should 'retrieve metrics data' do
     SkiplanClient.configure('../../data/lumi_response.xml')
-    weather = SkiplanClient.get_weather('MONT-LACHAT')
+    metrics = SkiplanClient.get_weather('CHINAILLON').metrics
 
-    assert_equal '101' , weather.auj_ciel_id_matin
-    assert_equal '101' , weather.auj_ciel_id_apm
-    assert_equal '+10' , weather.auj_temp_matin
-    assert_equal '+14' , weather.auj_temp_apm
-    assert_equal '104' , weather.dem_ciel_id_matin
-    assert_equal '106' , weather.dem_ciel_id_apm
-    assert_equal '+14' , weather.dem_temp_matin
-    assert_equal '+13' , weather.dem_temp_apm
-    assert_equal '106' , weather.j2_mat_ciel_id
-    assert_equal '104' , weather.j2_apm_ciel_id
-    assert_equal '+7' , weather.j2_temp_matin
-    assert_equal '+11' , weather.j2_temp_apm
-    assert_equal '101' , weather.j3_mat_ciel_id
-    assert_equal '103' , weather.j3_apm_ciel_id
-    assert_equal '+12' , weather.j3_temp_matin
-    assert_equal '+14' , weather.j3_temp_apm
-
+    assert_equal '0/44', metrics.alpine[:total]
+    assert_equal '0/17', metrics.nordic[:total]
+    assert_equal '9/12', metrics.pedestrian[:total]
+    assert_equal '0/14', metrics.snowshoes[:total]
+    assert_equal '0/4', metrics.sledge[:total]
+    assert_equal '0/8', metrics.snowpark[:total]
   end
 
   should 'change config url' do
-
-    config = SkiplanClient.configure('http://api.openweathermap.org/data/2.5/forecast/daily?q=tokyo&mode=xml&units=metric&cnt=1')
-
-    assert_equal 'http://api.openweathermap.org/data/2.5/forecast/daily?q=tokyo&mode=xml&units=metric&cnt=1', config
+    config = SkiplanClient.configure('my_new_url')
+    assert_equal 'my_new_url', config
   end
 
 end
