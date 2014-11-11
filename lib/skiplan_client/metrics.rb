@@ -5,9 +5,9 @@ class Metrics
 
   include AttributeHelper
 
-  METRICS = ['SKI_ALPIN', 'SKI_ALPIN_VERTES', 'SKI_ALPIN_BLEUES', 'SKI_ALPIN_ROUGES', 'SKI_ALPIN_NOIRES',
+  METRICS = ['SKI_NUIT', 'KM_SKATING', 'SKI_ALPIN', 'SKI_ALPIN_VERTES', 'SKI_ALPIN_BLEUES', 'SKI_ALPIN_ROUGES', 'SKI_ALPIN_NOIRES',
              'SKI_NORDIQUE', 'SKI_NORDIQUE_VERTES', 'SKI_NORDIQUE_BLEUES', 'SKI_NORDIQUE_ROUGES', 'SKI_NORDIQUE_NOIRES',
-             'PIETONS', 'RAQUETTES', 'LUGE', 'SNOWPARK']
+             'REMONTEES', 'PIETONS', 'RAQUETTES', 'LUGE', 'SNOWPARK']
 
   def initialize(attributes)
     self.attributes = attributes.keep_if {|k, v| METRICS.include?(k)} unless attributes.nil?
@@ -49,6 +49,18 @@ class Metrics
 
   def snowpark
     {:total => get_ratio(@SNOWPARK)}
+  end
+
+  def skilifts
+    {:total => get_ratio(@REMONTEES)}
+  end
+
+  def night_ski
+    @SKI_NUIT && @SKI_NUIT['etat'] == '1'
+  end
+
+  def skating
+    @KM_SKATING['ouvert'] unless @KM_SKATING.nil?
   end
 
   private

@@ -8,19 +8,21 @@ require 'skiplan_client/forecast'
 class ForecastTest < Test::Unit::TestCase
 
   should 'populate forecast with attributes values' do
-    forecast = Forecast.new({'TEMPERATURE' => '+10',
-                  'TEMPERATURE_APM' => '+14',
-                  'TEMPERATURE_RESSENTIE' => '+4',
-                  'VENT' => '4',
-                  'DIRECTION' => 'S',
-                  'CIEL_ID' => '101',
-                  'CIEL_ID_APM' => '101',
-                  'VALRISQUE' => '3',
-                  'CUMUL' => '100',
-                  'NEIGE' => '20',
-                  'DERNIERE_CHUTE' => '22/04/2014 08:31',
-                  'VISIBILITE' => '100'})
+    forecast = Forecast.new({'datemaj' => '03/07/2014 17:01:18',
+                             'TEMPERATURE' => '+10',
+                             'TEMPERATURE_APM' => '+14',
+                             'TEMPERATURE_RESSENTIE' => '+4',
+                             'VENT' => '4',
+                             'DIRECTION' => 'S',
+                             'CIEL_ID' => '101',
+                             'CIEL_ID_APM' => '101',
+                             'VALRISQUE' => '3',
+                             'CUMUL' => '100',
+                             'NEIGE' => '20',
+                             'DERNIERE_CHUTE' => '22/04/2014 08:31',
+                             'VISIBILITE' => '100'})
 
+    assert_equal '03/07/2014 17:01:18', forecast.updated_at
     assert_equal '101', forecast.weather_am
     assert_equal '101', forecast.weather_pm
     assert_equal '+10', forecast.temp_am

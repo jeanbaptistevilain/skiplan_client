@@ -1,6 +1,7 @@
 require 'skiplan_client/version'
 require 'skiplan_client/forecast'
 require 'skiplan_client/metrics'
+require 'skiplan_client/zone'
 require 'open-uri'
 require 'nokogiri'
 require 'active_support/core_ext/hash/conversions'
@@ -18,7 +19,7 @@ module SkiplanClient
 
   def self.get_weather(zone)
     xml = Nokogiri::XML(open(@config[:base_url]))
-    weather = WeatherObject.new
+    weather = Skiplan.new
 
     today_element = xml.xpath('//ZONE[@nom="' + zone + '"]')
     weather.forecasts['j'] = Forecast.new(Hash.from_xml(today_element.to_s)['ZONE'])
@@ -34,6 +35,11 @@ module SkiplanClient
 
     metrics = xml.xpath('//INDICES')
     weather.metrics = Metrics.new(Hash.from_xml(metrics.to_s)['INDICES'])
+
+    zones = xml.xpath('//SECTEUR')
+    zones.each do |z|
+      weather.zones[z['nom']] = Zone.new(Hash.from_xml(z.to_s)['SECTEUR'])
+    end
 
     weather
   end

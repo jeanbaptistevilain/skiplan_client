@@ -9,6 +9,10 @@ class Forecast
     self.attributes = attributes
   end
 
+  def updated_at
+    @datemaj
+  end
+
   def weather_am
     @CIEL_ID
   end

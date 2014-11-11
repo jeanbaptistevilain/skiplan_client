@@ -8,7 +8,9 @@ require 'skiplan_client/metrics'
 class MetricsTest < Test::Unit::TestCase
   
   setup do
-    attributes = {'SKI_ALPIN'=>{'total'=>'44', 'total_periode'=>'44', 'total_periode_hpf'=>'44', 'ouvertes_previsions'=>'0', 'ouvertes'=>'10', 'previsions'=>'0', 'fermees'=>'44', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
+    attributes = {'SKI_NUIT' => {'etat' => '1'},
+                  'KM_SKATING' => {'ouvert' => '10'},
+                  'SKI_ALPIN'=>{'total'=>'44', 'total_periode'=>'44', 'total_periode_hpf'=>'44', 'ouvertes_previsions'=>'0', 'ouvertes'=>'10', 'previsions'=>'0', 'fermees'=>'44', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
                   'SKI_ALPIN_VERTES'=>{'total'=>'12', 'total_periode'=>'12', 'total_periode_hpf'=>'12', 'ouvertes_previsions'=>'0', 'ouvertes'=>'2', 'previsions'=>'0', 'fermees'=>'12', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
                   'SKI_ALPIN_BLEUES'=>{'total'=>'15', 'total_periode'=>'15', 'total_periode_hpf'=>'15', 'ouvertes_previsions'=>'0', 'ouvertes'=>'3', 'previsions'=>'0', 'fermees'=>'15', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
                   'SKI_ALPIN_ROUGES'=>{'total'=>'14', 'total_periode'=>'14', 'total_periode_hpf'=>'14', 'ouvertes_previsions'=>'0', 'ouvertes'=>'4', 'previsions'=>'0', 'fermees'=>'14', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
@@ -18,6 +20,7 @@ class MetricsTest < Test::Unit::TestCase
                   'SKI_NORDIQUE_BLEUES'=>{'total'=>'4', 'total_periode'=>'4', 'total_periode_hpf'=>'4', 'ouvertes_previsions'=>'0', 'ouvertes'=>'3', 'previsions'=>'0', 'fermees'=>'4', 'lng_total'=>'20.9', 'lng_ouverts'=>'0.0'},
                   'SKI_NORDIQUE_ROUGES'=>{'total'=>'3', 'total_periode'=>'3', 'total_periode_hpf'=>'3', 'ouvertes_previsions'=>'0', 'ouvertes'=>'1', 'previsions'=>'0', 'fermees'=>'3', 'lng_total'=>'18.5', 'lng_ouverts'=>'0.0'},
                   'SKI_NORDIQUE_NOIRES'=>{'total'=>'3', 'total_periode'=>'3', 'total_periode_hpf'=>'3', 'ouvertes_previsions'=>'0', 'ouvertes'=>'0', 'previsions'=>'0', 'fermees'=>'3', 'lng_total'=>'22.6', 'lng_ouverts'=>'0.0'},
+                  'REMONTEES' => {'total'=>'32', 'total_periode'=>'32', 'total_periode_hpf'=>'32', 'ouvertes_previsions'=>'0', 'ouvertes'=>'0', 'previsions'=>'0', 'fermees'=>'32'},
                   'PIETONS'=>{'total'=>'12', 'total_periode'=>'12', 'total_periode_hpf'=>'12', 'ouvertes_previsions'=>'9', 'ouvertes'=>'9', 'previsions'=>'0', 'fermees'=>'3', 'lng_total'=>'47.5', 'lng_ouverts'=>'35.0'},
                   'RAQUETTES'=>{'total'=>'14', 'total_periode'=>'14', 'total_periode_hpf'=>'14', 'ouvertes_previsions'=>'0', 'ouvertes'=>'1', 'previsions'=>'0', 'fermees'=>'14', 'lng_total'=>'61.0', 'lng_ouverts'=>'0.0'},
                   'LUGE'=>{'total'=>'4', 'total_periode'=>'4', 'total_periode_hpf'=>'4', 'ouvertes_previsions'=>'0', 'ouvertes'=>'2', 'previsions'=>'0', 'fermees'=>'4', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
@@ -70,5 +73,17 @@ class MetricsTest < Test::Unit::TestCase
 
   should 'return metrics for snowparks' do
     assert_equal '3/8', @metrics.snowpark[:total]
+  end
+
+  should 'return metrics for skilifts' do
+    assert_equal '0/32', @metrics.skilifts[:total]
+  end
+
+  should 'return night ski availability for current day' do
+    assert_equal true, @metrics.night_ski
+  end
+
+  should 'return skating km available' do
+    assert_equal '10', @metrics.skating
   end
 end

@@ -3,7 +3,7 @@ require 'rubygems'
 gem 'shoulda'
 require 'test/unit'
 require 'shoulda'
-require 'skiplan_client/weather_object'
+require 'skiplan_client/skiplan'
 
 class WeatherObjectTest < Test::Unit::TestCase
 

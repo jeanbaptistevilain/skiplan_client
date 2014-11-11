@@ -4,7 +4,7 @@ gem 'shoulda'
 require 'test/unit'
 require 'shoulda'
 require 'skiplan_client'
-require 'skiplan_client/weather_object'
+require 'skiplan_client/skiplan'
 
 class SkiplanClientTest < Test::Unit::TestCase
 
@@ -53,10 +53,21 @@ class SkiplanClientTest < Test::Unit::TestCase
 
     assert_equal '0/44', metrics.alpine[:total]
     assert_equal '0/17', metrics.nordic[:total]
-    assert_equal '9/12', metrics.pedestrian[:total]
-    assert_equal '0/14', metrics.snowshoes[:total]
+    assert_equal '35/47.5km', metrics.pedestrian[:total]
+    assert_equal '0/61km', metrics.snowshoes[:total]
     assert_equal '0/4', metrics.sledge[:total]
     assert_equal '0/8', metrics.snowpark[:total]
+  end
+
+  should 'retrieve zones data' do
+    SkiplanClient.configure('../../data/lumi_response.xml')
+    zones = SkiplanClient.get_weather('CHINAILLON').zones
+
+    assert_equal 10, zones.length
+    assert_equal 'ALPIN CHINAILLON', zones.keys[0]
+
+    ac_zone = zones['ALPIN CHINAILLON']
+    # assert_equal
   end
 
   should 'change config url' do
