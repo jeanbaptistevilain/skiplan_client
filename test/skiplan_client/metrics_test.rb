@@ -57,6 +57,7 @@ class MetricsTest < Test::Unit::TestCase
     assert_equal '3/4', @metrics.nordic[:blue]
     assert_equal '1/3', @metrics.nordic[:red]
     assert_equal '0/3', @metrics.nordic[:black]
+    assert_equal '0/67.9km', @metrics.nordic[:km]
   end
 
   should 'return metrics for pedestrians' do

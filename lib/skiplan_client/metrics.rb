@@ -31,6 +31,7 @@ class Metrics
     nordic_metrics[:blue] = get_ratio(@SKI_NORDIQUE_BLEUES)
     nordic_metrics[:red] = get_ratio(@SKI_NORDIQUE_ROUGES)
     nordic_metrics[:black] = get_ratio(@SKI_NORDIQUE_NOIRES)
+    nordic_metrics[:km] = get_ratio_km(@SKI_NORDIQUE)
 
     nordic_metrics
   end
