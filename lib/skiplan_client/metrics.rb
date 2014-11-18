@@ -5,7 +5,7 @@ class Metrics
 
   include AttributeHelper
 
-  METRICS = ['SKI_NUIT', 'KM_SKATING', 'SKI_ALPIN', 'SKI_ALPIN_VERTES', 'SKI_ALPIN_BLEUES', 'SKI_ALPIN_ROUGES', 'SKI_ALPIN_NOIRES',
+  METRICS = ['ETAT_ROUTE', 'SKI_NUIT', 'KM_SKATING', 'SKI_ALPIN', 'SKI_ALPIN_VERTES', 'SKI_ALPIN_BLEUES', 'SKI_ALPIN_ROUGES', 'SKI_ALPIN_NOIRES',
              'SKI_NORDIQUE', 'SKI_NORDIQUE_VERTES', 'SKI_NORDIQUE_BLEUES', 'SKI_NORDIQUE_ROUGES', 'SKI_NORDIQUE_NOIRES',
              'REMONTEES', 'PIETONS', 'RAQUETTES', 'LUGE', 'SNOWPARK']
 
@@ -62,6 +62,10 @@ class Metrics
 
   def skating
     @KM_SKATING['ouvert'] unless @KM_SKATING.nil?
+  end
+
+  def roads
+    @ETAT_ROUTE['lib']
   end
 
   private

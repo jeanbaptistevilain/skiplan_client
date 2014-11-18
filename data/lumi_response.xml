@@ -248,20 +248,16 @@
       </PARAMETRES>
       <BULLETINS>
         <COMMENTAIRES>
-          <LANGUE val="en"><![CDATA[Col de la Colombi??re open.
-
-SKI AREA IS CLOSED FOR THE SEASON 2013/2014.]]></LANGUE>
-          <LANGUE val="fr"><![CDATA[Col de la Colombi??re ouvert.
-
-LE DOMAINE SKIABLE EST FERM?? POUR LA SAISON 2013/2014.]]></LANGUE>
+          <LANGUE val="en"><![CDATA[Col de la Colombière open.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[Col de la Colombière ouvert.]]></LANGUE>
         </COMMENTAIRES>
         <JOUR>
-          <LANGUE val="en"><![CDATA[The sun will shine. Variable winds, light at most places.]]></LANGUE>
-          <LANGUE val="fr"><![CDATA[Soleil et ciel bleu pr??dominent. Vent variable faible. Cette nuit : Nuit ??toil??e, puis d??gradation nuageuse en fin de nuit.En fin de nuit vent de sud-est mod??r?? dans le Pays du Mont Blanc. Sur les autres r??gions, vent plus faible.]]></LANGUE>
+          <LANGUE val="en"><![CDATA[Rain and snow. Variable winds, light at most places.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[Pluie. Vent faible variable.]]></LANGUE>
         </JOUR>
         <LENDEMAIN>
-          <LANGUE val="en"><![CDATA[Rain and thunderstorm. Early in the day, moderate southeasterly wind Mont-Blanc region with gusts reaching 55 km/h ; decreasing later. Elsewhere lighter winds.]]></LANGUE>
-          <LANGUE val="fr"><![CDATA[Temps nuageux ?? tr??s nuageux, averses parfois orageuses en journ??e. En d??but de matin??e, vent de sud-est soufflant mod??r??ment dans le Pays du Mont Blanc, avec des rafales atteignant 55 km/h; puis att??nuation. Ailleurs, vent plus faible.]]></LANGUE>
+          <LANGUE val="en"><![CDATA[Dry and mostly sunny. Variable winds, light at most places.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[Beau temps sec et ensoleillé. Vent faible variable.]]></LANGUE>
         </LENDEMAIN>
         <SEMAINE>
           <LANGUE val="en"/>

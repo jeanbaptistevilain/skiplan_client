@@ -41,6 +41,9 @@ module SkiplanClient
       weather.zones[z['nom']] = Zone.new(Hash.from_xml(z.to_s)['SECTEUR'])
     end
 
+    text_forecasts = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
+    weather.text_forecasts = Hash.from_xml(text_forecasts.to_s)['LANGUE']
+
     weather
   end
 end

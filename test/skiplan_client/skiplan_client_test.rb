@@ -67,7 +67,8 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal 'ALPIN CHINAILLON', zones.keys[0]
 
     ac_zone = zones['ALPIN CHINAILLON']
-    # assert_equal
+    assert_equal 10, ac_zone.skilifts.count
+    assert_equal 16, ac_zone.slopes.count
   end
 
   should 'change config url' do
@@ -75,4 +76,10 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal 'my_new_url', config
   end
 
+  should 'retrieve text forecasts' do
+    SkiplanClient.configure('../../data/lumi_response.xml')
+    text_forecasts = SkiplanClient.get_weather('CHINAILLON').text_forecasts
+
+    assert_equal 'Pluie. Vent faible variable.', text_forecasts
+  end
 end

@@ -8,7 +8,8 @@ require 'skiplan_client/metrics'
 class MetricsTest < Test::Unit::TestCase
   
   setup do
-    attributes = {'SKI_NUIT' => {'etat' => '1'},
+    attributes = {'ETAT_ROUTE' => {'lib' => "Routes dégagées, circulation normale"},
+                  'SKI_NUIT' => {'etat' => '1'},
                   'KM_SKATING' => {'ouvert' => '10'},
                   'SKI_ALPIN'=>{'total'=>'44', 'total_periode'=>'44', 'total_periode_hpf'=>'44', 'ouvertes_previsions'=>'0', 'ouvertes'=>'10', 'previsions'=>'0', 'fermees'=>'44', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
                   'SKI_ALPIN_VERTES'=>{'total'=>'12', 'total_periode'=>'12', 'total_periode_hpf'=>'12', 'ouvertes_previsions'=>'0', 'ouvertes'=>'2', 'previsions'=>'0', 'fermees'=>'12', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
@@ -86,5 +87,9 @@ class MetricsTest < Test::Unit::TestCase
 
   should 'return skating km available' do
     assert_equal '10', @metrics.skating
+  end
+
+  should 'return a detailed status for the local roads' do
+    assert_equal 'Routes dégagées, circulation normale', @metrics.roads
   end
 end
