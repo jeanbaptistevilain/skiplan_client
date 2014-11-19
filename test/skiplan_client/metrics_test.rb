@@ -9,6 +9,7 @@ class MetricsTest < Test::Unit::TestCase
   
   setup do
     attributes = {'ETAT_ROUTE' => {'lib' => "Routes dégagées, circulation normale"},
+                  'ETAT_CHAUSSEE' => {'val' => '0', 'lib' => "Dégagées et sèches"},
                   'SKI_NUIT' => {'etat' => '1'},
                   'KM_SKATING' => {'ouvert' => '10'},
                   'SKI_ALPIN'=>{'total'=>'44', 'total_periode'=>'44', 'total_periode_hpf'=>'44', 'ouvertes_previsions'=>'0', 'ouvertes'=>'10', 'previsions'=>'0', 'fermees'=>'44', 'lng_total'=>'0.0', 'lng_ouverts'=>'0.0'},
@@ -89,7 +90,11 @@ class MetricsTest < Test::Unit::TestCase
     assert_equal '10', @metrics.skating
   end
 
-  should 'return a detailed status for the local roads' do
-    assert_equal 'Routes dégagées, circulation normale', @metrics.roads
+  should 'return a detailed status for the driving conditions' do
+    assert_equal 'Routes dégagées, circulation normale', @metrics.driving_conditions
+  end
+
+  should 'return a detailed status for the roads' do
+    assert_equal 'Dégagées et sèches', @metrics.roads
   end
 end
