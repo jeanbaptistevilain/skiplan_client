@@ -278,16 +278,8 @@
         <SKI_AURORE etat="0"/>
         <KM_SKATING ouvert="0"/>
         <COMMENTAIRES>
-          <LANGUE val="en"><![CDATA[SKI AREA IS CLOSED FOR THE SEASON 2013/2014.
-
-Col de la Colombi??re closed.
-Road D12 is closed between St Pierre en Faucigny and Petit-Bornand les Gli??res from 31/03 to 15/06/14 for work. Deviation from Annecy.
-Ski lifts opening and slopes access may change at any time depending on weather conditions and various maintenance operations. Outside opening hours, the ski area is strictly prohibited.]]></LANGUE>
-          <LANGUE val="fr"><![CDATA[LE DOMAINE SKIABLE EST FERM?? POUR LA SAISON 2013/2014.
-
-Col de la Colombi??re ferm??.
-Attention, fermeture de la D12 entre St Pierre en Faucigny et Petit-Bornand les Gli??res du 31/03 au 15/06/14 pour travaux. D??viation par Annecy.
-L'ouverture des remont??es m??caniques et l'acc??s aux pistes peuvent ??voluer en fonction des conditions m??t??orologiques et des op??rations d'entretien et de maintenance. En dehors des heures d'ouverture, le domaine skiable est strictement interdit.]]></LANGUE>
+          <LANGUE val="en"><![CDATA[SKI AREA IS CLOSED FOR THE SEASON 2013/2014.]]></LANGUE>
+          <LANGUE val="fr"><![CDATA[LE DOMAINE SKIABLE EST FERME POUR LA SAISON 2013/2014.]]></LANGUE>
         </COMMENTAIRES>
         <PISTES total="44" total_periode="44" total_periode_hpf="44" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="44" lng_total="0.0" lng_ouverts="0.0"/>
         <PISTES_VERTES total="12" total_periode="12" total_periode_hpf="12" ouvertes_previsions="0" ouvertes="0" previsions="0" fermees="12" lng_total="0.0" lng_ouverts="0.0"/>

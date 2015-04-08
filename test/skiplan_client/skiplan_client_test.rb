@@ -8,9 +8,15 @@ require 'skiplan_client/skiplan'
 
 class SkiplanClientTest < Test::Unit::TestCase
 
-  should 'retrieve weather data' do
+  setup do
+    if Dir.pwd.include?('test')
+      SkiplanClient.configure('../../data/lumi_response.xml')
+    else
+      SkiplanClient.configure('data/lumi_response.xml')
+    end
+  end
 
-    SkiplanClient.configure('../../data/lumi_response.xml')
+  should 'retrieve weather data' do
     weather = SkiplanClient.get_weather('CHINAILLON')
 
     today_forecast = weather.forecasts['j']
@@ -48,7 +54,6 @@ class SkiplanClientTest < Test::Unit::TestCase
   end
 
   should 'retrieve metrics data' do
-    SkiplanClient.configure('../../data/lumi_response.xml')
     metrics = SkiplanClient.get_weather('CHINAILLON').metrics
 
     assert_equal '0/44', metrics.alpine[:total]
@@ -60,7 +65,6 @@ class SkiplanClientTest < Test::Unit::TestCase
   end
 
   should 'retrieve zones data' do
-    SkiplanClient.configure('../../data/lumi_response.xml')
     zones = SkiplanClient.get_weather('CHINAILLON').zones
 
     assert_equal 10, zones.length
@@ -76,10 +80,11 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal 'my_new_url', config
   end
 
-  should 'retrieve text forecasts' do
-    SkiplanClient.configure('../../data/lumi_response.xml')
-    text_forecasts = SkiplanClient.get_weather('CHINAILLON').text_forecasts
+  should 'retrieve text messages' do
+    text_forecasts = SkiplanClient.get_weather('CHINAILLON').text_messages
 
-    assert_equal 'Pluie. Vent faible variable.', text_forecasts
+    assert_equal 'Pluie. Vent faible variable.', text_forecasts['today_forecast']
+    assert_equal 'Col de la Colombière ouvert.', text_forecasts['forecasts_comment']
+    assert_equal 'LE DOMAINE SKIABLE EST FERME POUR LA SAISON 2013/2014.', text_forecasts['slopes_comment']
   end
 end

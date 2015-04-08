@@ -41,8 +41,14 @@ module SkiplanClient
       weather.zones[z['nom']] = Zone.new(Hash.from_xml(z.to_s)['SECTEUR'])
     end
 
-    text_forecasts = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
-    weather.text_forecasts = Hash.from_xml(text_forecasts.to_s)['LANGUE']
+    today_forecast = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
+    weather.text_messages['today_forecast'] = Hash.from_xml(today_forecast.to_s)['LANGUE']
+
+    forecasts_comment = xml.xpath('//BULLETINS//COMMENTAIRES//LANGUE[@val="fr"]')
+    weather.text_messages['forecasts_comment'] = Hash.from_xml(forecasts_comment.to_s)['LANGUE']
+
+    slopes_comment = xml.xpath('//INDICES//COMMENTAIRES//LANGUE[@val="fr"]')
+    weather.text_messages['slopes_comment'] = Hash.from_xml(slopes_comment.to_s)['LANGUE']
 
     weather
   end
