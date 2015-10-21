@@ -5,7 +5,10 @@ class Zone
   include AttributeHelper
 
   def initialize(attributes)
-    self.attributes = attributes
+    normalized_attrs = attributes.dup
+    normalized_attrs['REMONTEE'] = [normalized_attrs['REMONTEE']] if normalized_attrs['REMONTEE'].is_a?(Hash)
+    normalized_attrs['PISTE'] = [normalized_attrs['PISTE']] if normalized_attrs['PISTE'].is_a?(Hash)
+    self.attributes = normalized_attrs
   end
 
   def name

@@ -4,6 +4,7 @@ class Skiplan
 
   def initialize
     @forecasts = {}
+    @metrics = {}
     @zones = {}
     @text_messages = {}
   end

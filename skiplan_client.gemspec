@@ -6,7 +6,7 @@ require 'skiplan_client/version'
 Gem::Specification.new do |spec|
   spec.name          = "skiplan_client"
   spec.version       = SkiplanClient::VERSION
-  spec.authors       = ["SimonRonzani"]
+  spec.authors       = ["SimonRonzani", "jeanbaptistevilain"]
   spec.email         = ["ronzani.simon@gmail.com"]
   spec.description   = "SkiPlan API client gem"
   spec.summary       = "A simple Ruby wrapper for the SkiPlan XML api"
@@ -18,10 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.0"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "test-unit"
-  spec.add_development_dependency "shoulda"
-  spec.add_runtime_dependency "rails", "~> 3.2.14"
+  spec.add_development_dependency "shoulda-context"
+  spec.add_runtime_dependency "rails"
   spec.add_runtime_dependency "nokogiri"
 end

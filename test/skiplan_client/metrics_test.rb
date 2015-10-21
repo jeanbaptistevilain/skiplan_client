@@ -1,8 +1,7 @@
 # encoding : UTF-8
 require 'rubygems'
-gem 'shoulda'
 require 'test/unit'
-require 'shoulda'
+require 'shoulda-context'
 require 'skiplan_client/metrics'
 
 class MetricsTest < Test::Unit::TestCase
