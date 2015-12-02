@@ -85,6 +85,7 @@ class SkiplanClientTest < Test::Unit::TestCase
     text_forecasts = SkiplanClient.weather('CHINAILLON').text_messages
 
     assert_equal 'Pluie. Vent faible variable.', text_forecasts['today_forecast']
+    assert_equal 'Beau temps sec et ensoleillé. Vent faible variable.', text_forecasts['tomorrow_forecast']
     assert_equal 'Col de la Colombière ouvert.', text_forecasts['forecasts_comment']
   end
 

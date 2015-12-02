@@ -30,6 +30,9 @@ module SkiplanClient
     today_forecast = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
     skiplan.text_messages['today_forecast'] = Hash.from_xml(today_forecast.to_s)['LANGUE']
 
+    tomorrow_forecast = xml.xpath('//BULLETINS//LENDEMAIN//LANGUE[@val="fr"]')
+    skiplan.text_messages['tomorrow_forecast'] = Hash.from_xml(tomorrow_forecast.to_s)['LANGUE']
+
     forecasts_comment = xml.xpath('//BULLETINS//COMMENTAIRES//LANGUE[@val="fr"]')
     skiplan.text_messages['forecasts_comment'] = Hash.from_xml(forecasts_comment.to_s)['LANGUE']
 
