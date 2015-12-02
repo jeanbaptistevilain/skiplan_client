@@ -27,15 +27,6 @@ module SkiplanClient
       skiplan.forecasts[n['nom']] = Forecast.new(Hash.from_xml(n.to_s)['ZONE'])
     end
 
-    today_forecast = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
-    skiplan.text_messages['today_forecast'] = Hash.from_xml(today_forecast.to_s)['LANGUE']
-
-    tomorrow_forecast = xml.xpath('//BULLETINS//LENDEMAIN//LANGUE[@val="fr"]')
-    skiplan.text_messages['tomorrow_forecast'] = Hash.from_xml(tomorrow_forecast.to_s)['LANGUE']
-
-    forecasts_comment = xml.xpath('//BULLETINS//COMMENTAIRES//LANGUE[@val="fr"]')
-    skiplan.text_messages['forecasts_comment'] = Hash.from_xml(forecasts_comment.to_s)['LANGUE']
-
     skiplan
   end
 
@@ -46,9 +37,6 @@ module SkiplanClient
     area_metrics = xml.xpath('//INDICES')
     area_metrics.each do |area|
       skiplan.metrics[area['nom']] = Metrics.new(Hash.from_xml(area.to_s)['INDICES'])
-      slopes_comment = area.xpath('.//COMMENTAIRES//LANGUE[@val="fr"]')
-      skiplan.text_messages[area['nom']] ||= {}
-      skiplan.text_messages[area['nom']]['slopes_comment'] = Hash.from_xml(slopes_comment.to_s)['LANGUE']
     end
 
     zones = xml.xpath('//SECTEUR')
@@ -57,5 +45,30 @@ module SkiplanClient
     end
 
     skiplan
+  end
+
+  def self.texts
+    xml = Nokogiri::XML(open(@config[:base_url]))
+    text_messages = {}
+
+    today_forecast = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
+    text_messages['today_forecast'] = Hash.from_xml(today_forecast.to_s)['LANGUE']
+
+    tomorrow_forecast = xml.xpath('//BULLETINS//LENDEMAIN//LANGUE[@val="fr"]')
+    text_messages['tomorrow_forecast'] = Hash.from_xml(tomorrow_forecast.to_s)['LANGUE']
+
+    forecasts_comment = xml.xpath('//BULLETINS//COMMENTAIRES//LANGUE[@val="fr"]')
+    text_messages['forecasts_comment'] = Hash.from_xml(forecasts_comment.to_s)['LANGUE']
+
+    ski_area_comment = xml.xpath('//INDICES//COMMENTAIRES//LANGUE[@val="fr"]')
+    text_messages['ski_area'] = Hash.from_xml(ski_area_comment.to_s)['LANGUE']
+
+    conditions_comment = xml.xpath('//INDICES//ETAT_ROUTE')
+    text_messages['conditions'] = Hash.from_xml(conditions_comment.to_s)['ETAT_ROUTE']['lib']
+
+    roads_comment = xml.xpath('//INDICES//ETAT_CHAUSSEE')
+    text_messages['roads'] = Hash.from_xml(roads_comment.to_s)['ETAT_CHAUSSEE']['lib']
+
+    text_messages
   end
 end

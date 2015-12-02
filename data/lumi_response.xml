@@ -268,8 +268,8 @@
         <SKIABILITE val="0" lib="0 : station ferm??e"/>
         <AMBIANCE val="2" lib="Non : pas de neige"/>
         <RETOUR_SKI val="2" lib="Non : le retour n'est pas assur?? ou n'existe pas"/>
-        <ETAT_ROUTE val="0" lib="Routes d??gag??es, circulation normale"/>
-        <ETAT_CHAUSSEE val="8" lib="Non d??fini"/>
+        <ETAT_ROUTE val="0" lib="Routes degagees, circulation normale"/>
+        <ETAT_CHAUSSEE val="8" lib="Non defini"/>
         <PRATIQUE_ACTIVITES val="2" lib="Bonnes"/>
         <STATION_OUVERTURE val="2" lib="Ferm??e (fin de saison)"/>
         <STATION_PERIODE_HIVER debut="30/11/2013" debut_en="11/30/2013" fin="21/04/2014" fin_en="04/21/2014"/>

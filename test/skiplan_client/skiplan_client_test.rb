@@ -82,16 +82,13 @@ class SkiplanClientTest < Test::Unit::TestCase
   end
 
   should 'retrieve forecasts text messages' do
-    text_forecasts = SkiplanClient.weather('CHINAILLON').text_messages
+    texts = SkiplanClient.texts
 
-    assert_equal 'Pluie. Vent faible variable.', text_forecasts['today_forecast']
-    assert_equal 'Beau temps sec et ensoleillé. Vent faible variable.', text_forecasts['tomorrow_forecast']
-    assert_equal 'Col de la Colombière ouvert.', text_forecasts['forecasts_comment']
-  end
-
-  should 'retrieve ski area text messages' do
-    text_forecasts = SkiplanClient.ski_area.text_messages['GRAND BORNAND']
-
-    assert_equal 'LE DOMAINE SKIABLE EST FERME POUR LA SAISON 2013/2014.', text_forecasts['slopes_comment']
+    assert_equal 'Pluie. Vent faible variable.', texts['today_forecast']
+    assert_equal 'Beau temps sec et ensoleillé. Vent faible variable.', texts['tomorrow_forecast']
+    assert_equal 'Col de la Colombière ouvert.', texts['forecasts_comment']
+    assert_equal 'LE DOMAINE SKIABLE EST FERME POUR LA SAISON 2013/2014.', texts['ski_area']
+    assert_equal 'Routes degagees, circulation normale', texts['conditions']
+    assert_equal 'Non defini', texts['roads']
   end
 end
