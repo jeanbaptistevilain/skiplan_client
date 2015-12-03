@@ -11,7 +11,9 @@ class ZoneTest < Test::Unit::TestCase
                   'REMONTEE' => [{'nom' => 'TS LA FLORIA', 'etat' => 'O', 'type' => 'TS', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:45'},
                                  {'nom' => 'TK LE STADE', 'etat' => 'F', 'type' => 'TK', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:00'}],
                   'PISTE' => [{'nom' => 'LA SERPENTINE', 'etat' => 'F', 'type' => 'A', 'msg' => 'Piste de retour au Village', 'niveau' => 'V', 'entretien_num' => '1'},
-                              {'nom' => 'LE VENAY', 'etat' => 'O', 'type' => 'A', 'msg' => '', 'niveau' => 'V', 'entretien_num' => '0'}]
+                              {'nom' => 'LE VENAY', 'etat' => 'O', 'type' => 'A', 'msg' => '', 'niveau' => 'V', 'entretien_num' => '0'}],
+                  'Liaison' => [{'nom' => 'DOUCYCOMBELOUVIERE', 'etat' => 'F'}, {'nom' => 'ST FRANCOIS', 'etat' => 'O'}]
+
     }
     @zone = Zone.new(attributes)
   end
@@ -22,6 +24,7 @@ class ZoneTest < Test::Unit::TestCase
                   {'nom' => 'TK LE STADE', 'etat' => 'F', 'type' => 'TK', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:00'}], @zone.skilifts
     assert_equal [{'nom' => 'LA SERPENTINE', 'etat' => 'F', 'type' => 'A', 'msg' => 'Piste de retour au Village', 'niveau' => 'V', 'entretien_num' => '1'},
                   {'nom' => 'LE VENAY', 'etat' => 'O', 'type' => 'A', 'msg' => '', 'niveau' => 'V', 'entretien_num' => '0'}], @zone.slopes
+    assert_equal [{'nom' => 'DOUCYCOMBELOUVIERE', 'etat' => 'F'}, {'nom' => 'ST FRANCOIS', 'etat' => 'O'}], @zone.connections
   end
 
   should 'store an array of slopes even when only one slope is present' do

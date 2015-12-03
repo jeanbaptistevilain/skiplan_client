@@ -565,6 +565,13 @@
             <PLAGE prd_id="4" pgh_id="" heuredeb="" heurefin=""/>
           </PLAGES>
         </PISTE>
+        <Liaison nom="FICTIVE" etat="O">
+          <PLAGES>
+            <PLAGE ent_id="1" prd_id="1" pgh_id="1" heuredeb="09:25" heurefin="16:35"/>
+            <PLAGE ent_id="1" prd_id="2" pgh_id="1" heuredeb="09:25" heurefin="16:35"/>
+            <PLAGE ent_id="1" prd_id="3" pgh_id="1" heuredeb="09:25" heurefin="16:35"/>
+          </PLAGES>
+        </Liaison>
       </SECTEUR>
       <SECTEUR nom="ALPIN JOYERE">
         <REMONTEE nom="TC LA JOYERE" etat="F" type="TC" msg="Ferm??e pour la saison                                                                                                                                                                                   " attente="0" longueur="0" heuredeb="00:00" heurefin="23:59" heuredebmod="00:00" heurefinmod="23:59">

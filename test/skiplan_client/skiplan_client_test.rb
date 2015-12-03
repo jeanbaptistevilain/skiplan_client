@@ -71,6 +71,7 @@ class SkiplanClientTest < Test::Unit::TestCase
     ac_zone = zones['ALPIN CHINAILLON']
     assert_equal 10, ac_zone.skilifts.count
     assert_equal 16, ac_zone.slopes.count
+    assert_equal 1, ac_zone.connections.count
 
     single_entry_zone = zones['PIETONS']
     assert_equal 1, single_entry_zone.slopes.count
