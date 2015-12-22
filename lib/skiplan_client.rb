@@ -49,18 +49,27 @@ module SkiplanClient
 
   def self.texts
     xml = Nokogiri::XML(open(@config[:base_url]))
+    {
+        fr: SkiplanClient.localized_texts(xml, 'fr'),
+        en: SkiplanClient.localized_texts(xml, 'en')
+    }
+  end
+
+  private
+
+  def self.localized_texts(xml, locale)
     text_messages = {}
 
-    today_forecast = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="fr"]')
+    today_forecast = xml.xpath('//BULLETINS//JOUR//LANGUE[@val="' + locale + '"]')
     text_messages['today_forecast'] = Hash.from_xml(today_forecast.to_s)['LANGUE']
 
-    tomorrow_forecast = xml.xpath('//BULLETINS//LENDEMAIN//LANGUE[@val="fr"]')
+    tomorrow_forecast = xml.xpath('//BULLETINS//LENDEMAIN//LANGUE[@val="' + locale + '"]')
     text_messages['tomorrow_forecast'] = Hash.from_xml(tomorrow_forecast.to_s)['LANGUE']
 
-    forecasts_comment = xml.xpath('//BULLETINS//COMMENTAIRES//LANGUE[@val="fr"]')
+    forecasts_comment = xml.xpath('//BULLETINS//COMMENTAIRES//LANGUE[@val="' + locale + '"]')
     text_messages['forecasts_comment'] = Hash.from_xml(forecasts_comment.to_s)['LANGUE']
 
-    ski_area_comment = xml.xpath('//INDICES//COMMENTAIRES//LANGUE[@val="fr"]')
+    ski_area_comment = xml.xpath('//INDICES//COMMENTAIRES//LANGUE[@val="' + locale + '"]')
     text_messages['ski_area'] = Hash.from_xml(ski_area_comment.to_s)['LANGUE']
 
     conditions_comment = xml.xpath('//INDICES//ETAT_ROUTE')

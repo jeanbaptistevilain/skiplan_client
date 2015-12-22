@@ -85,11 +85,17 @@ class SkiplanClientTest < Test::Unit::TestCase
   should 'retrieve forecasts text messages' do
     texts = SkiplanClient.texts
 
-    assert_equal 'Pluie. Vent faible variable.', texts['today_forecast']
-    assert_equal 'Beau temps sec et ensoleillé. Vent faible variable.', texts['tomorrow_forecast']
-    assert_equal 'Col de la Colombière ouvert.', texts['forecasts_comment']
-    assert_equal 'LE DOMAINE SKIABLE EST FERME POUR LA SAISON 2013/2014.', texts['ski_area']
-    assert_equal 'Routes degagees, circulation normale', texts['conditions']
-    assert_equal 'Non defini', texts['roads']
+    assert_equal 'Pluie. Vent faible variable.', texts[:fr]['today_forecast']
+    assert_equal 'Beau temps sec et ensoleillé. Vent faible variable.', texts[:fr]['tomorrow_forecast']
+    assert_equal 'Col de la Colombière ouvert.', texts[:fr]['forecasts_comment']
+    assert_equal 'LE DOMAINE SKIABLE EST FERME POUR LA SAISON 2013/2014.', texts[:fr]['ski_area']
+    assert_equal 'Routes degagees, circulation normale', texts[:fr]['conditions']
+    assert_equal 'Non defini', texts[:fr]['roads']
+    assert_equal 'Rain and snow. Variable winds, light at most places.', texts[:en]['today_forecast']
+    assert_equal 'Dry and mostly sunny. Variable winds, light at most places.', texts[:en]['tomorrow_forecast']
+    assert_equal 'Col de la Colombière open.', texts[:en]['forecasts_comment']
+    assert_equal 'SKI AREA IS CLOSED FOR THE SEASON 2013/2014.', texts[:en]['ski_area']
+    assert_equal 'Routes degagees, circulation normale', texts[:en]['conditions']
+    assert_equal 'Non defini', texts[:en]['roads']
   end
 end

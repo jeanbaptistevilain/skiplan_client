@@ -8,7 +8,10 @@ class ZoneTest < Test::Unit::TestCase
 
   setup do
     attributes = {'nom' => 'ALPIN CHINAILLON',
-                  'REMONTEE' => [{'nom' => 'TS LA FLORIA', 'etat' => 'O', 'type' => 'TS', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:45'},
+                  'REMONTEE' => [{
+                                     'nom' => 'TS LA FLORIA', 'etat' => 'O', 'type' => 'TS', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:45',
+                                     'MSG_ASSOCIE' => ['message fr', 'message en']
+                                 },
                                  {'nom' => 'TK LE STADE', 'etat' => 'F', 'type' => 'TK', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:00'}],
                   'PISTE' => [{'nom' => 'LA SERPENTINE', 'etat' => 'F', 'type' => 'A', 'msg' => 'Piste de retour au Village', 'niveau' => 'V', 'entretien_num' => '1'},
                               {'nom' => 'LE VENAY', 'etat' => 'O', 'type' => 'A', 'msg' => '', 'niveau' => 'V', 'entretien_num' => '0'}],
@@ -20,7 +23,10 @@ class ZoneTest < Test::Unit::TestCase
 
   should 'retrieve the data for a given zone' do
     assert_equal 'ALPIN CHINAILLON', @zone.name
-    assert_equal [{'nom' => 'TS LA FLORIA', 'etat' => 'O', 'type' => 'TS', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:45'},
+    assert_equal [{
+                      'nom' => 'TS LA FLORIA', 'etat' => 'O', 'type' => 'TS', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:45',
+                      'MSG_ASSOCIE' => ['message fr', 'message en']
+                  },
                   {'nom' => 'TK LE STADE', 'etat' => 'F', 'type' => 'TK', 'msg' => 'Fermee pour la saison', 'heuredeb' => '09:00', 'heurefin' => '16:00'}], @zone.skilifts
     assert_equal [{'nom' => 'LA SERPENTINE', 'etat' => 'F', 'type' => 'A', 'msg' => 'Piste de retour au Village', 'niveau' => 'V', 'entretien_num' => '1'},
                   {'nom' => 'LE VENAY', 'etat' => 'O', 'type' => 'A', 'msg' => '', 'niveau' => 'V', 'entretien_num' => '0'}], @zone.slopes
