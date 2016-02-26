@@ -20,7 +20,7 @@ module SkiplanClient
 
   def self.weather(zone)
     xml = Nokogiri::XML(open(@config[:base_url]))
-    skiplan = Skiplan.new
+    skiplan = Skiplan.new(xml.xpath('//DATEINFO').text)
 
     zone_nodes = xml.xpath('//ZONE[@reference="' + zone + '"]')
     zone_nodes.each do |n|
@@ -32,7 +32,7 @@ module SkiplanClient
 
   def self.ski_area
     xml = Nokogiri::XML(open(@config[:base_url]))
-    skiplan = Skiplan.new
+    skiplan = Skiplan.new(xml.xpath('//DATEINFO').text)
 
     area_metrics = xml.xpath('//INDICES')
     area_metrics.each do |area|

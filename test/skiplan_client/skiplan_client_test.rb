@@ -49,6 +49,8 @@ class SkiplanClientTest < Test::Unit::TestCase
     assert_equal '+20' , j3_forecast.temp_pm
     assert_equal '7'   , j3_forecast.wind_speed
     assert_equal 'O'  , j3_forecast.wind_dir
+
+    assert_equal '03/07/2014 17:01', weather.updated_at
   end
 
   should 'retrieve metrics data' do

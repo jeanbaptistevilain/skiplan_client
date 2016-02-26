@@ -75,7 +75,7 @@ class Metrics
   private
 
   def get_ratio(hash)
-    "#{hash['ouvertes']}/#{hash['total']}" unless hash.nil?
+    "#{hash['ouvertes_previsions']}/#{hash['total']}" unless hash.nil?
   end
 
   def get_ratio_km(hash)

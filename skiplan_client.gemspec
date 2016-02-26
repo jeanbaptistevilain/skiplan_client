@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "skiplan_client"
   spec.version       = SkiplanClient::VERSION
   spec.authors       = ["SimonRonzani", "jeanbaptistevilain"]
-  spec.email         = ["ronzani.simon@gmail.com"]
+  spec.email         = ["jeanbaptistevilain@gmail.com"]
   spec.description   = "SkiPlan API client gem"
   spec.summary       = "A simple Ruby wrapper for the SkiPlan XML api"
   spec.homepage      = "https://github.com/jeanbaptistevilain/skiplan_client"
