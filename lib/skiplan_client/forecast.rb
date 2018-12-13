@@ -60,4 +60,12 @@ class Forecast
   def visibility
     @VISIBILITE
   end
+
+  def snow_quality
+    @QUALITE
+  end
+
+  def rain_snow_limit
+    @LIMITE_PLUIE_NEIGE
+  end
 end
